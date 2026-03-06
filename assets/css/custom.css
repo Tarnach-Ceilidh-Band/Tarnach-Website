@@ -46,14 +46,16 @@
     src: url('/fonts/CrimsonPro-Regular.woff2');
 }
 
+/* THE URLS HERE ARE A HACK BECAUSE THE THEME DOES NOT PROPERLY DEAL WITH SUBFOLDERS
+AS BASEURLS. /Tarnach-Website/ should be removed when properly deploying.*/
 @font-face {
     font-family: 'Crimson Pro';
-    src: url('/fonts/CrimsonPro-Regular.eot');
-    src: url('/fonts/CrimsonPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/CrimsonPro-Regular.woff2') format('woff2'),
-        url('/fonts/CrimsonPro-Regular.woff') format('woff'),
-        url('/fonts/CrimsonPro-Regular.ttf') format('truetype'),
-        url('/fonts/CrimsonPro-Regular.svg#CrimsonPro-Regular') format('svg');
+    src: url('/Tarnach-Website/fonts/CrimsonPro-Regular.eot');
+    src: url('/Tarnach-Website//fonts/CrimsonPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/Tarnach-Website//fonts/CrimsonPro-Regular.woff2') format('woff2'),
+        url('/Tarnach-Website//fonts/CrimsonPro-Regular.woff') format('woff'),
+        url('/Tarnach-Website//fonts/CrimsonPro-Regular.ttf') format('truetype'),
+        url('/Tarnach-Website//fonts/CrimsonPro-Regular.svg#CrimsonPro-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
