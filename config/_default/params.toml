@@ -25,11 +25,11 @@ disableImageOptimizationMD = false
 disableTextInHeader = true
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "images/ArdochOpenDay-141.jpg" # used as default for background images
+defaultBackgroundImage = "images/ArdochOpenDay-141-edited1.jpg" # used as default for background images
 defaultFeaturedImage = "images/ArdochOpenDay-144.jpg" # used as default for featured images in all articles
 defaultSocialImage = "images/ArdochOpenDay-144.jpg" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
-# imagePosition = "50% 50%"
+#imagePosition = "50% -100%"
 
 highlightCurrentMenuArea = true
 # smartTOC = true

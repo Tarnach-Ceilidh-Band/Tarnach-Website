@@ -18,6 +18,12 @@
   .min-h-\[100px\] {
     min-height: 100px;
   }
+  .min-h-\[80px\] {
+    min-height: 80px;
+  }
+  .min-h-\[60px\] {
+    min-height: 60px;
+  }
   .text-secondary-600 {
     color: rgba(var(--color-secondary-600), 1);
   }
@@ -27,11 +33,17 @@
   .hover-change:hover {
     color: rgba(var(--color-secondary-400), 1);
   }
+  .text-black {
+    color: #000000;
+  }
+  .max-h-logo {
+    max-height: calc(var(--spacing) * 40);
+  }
 }
 
 @font-face {
     font-family: font;
-    src: url('/fonts/CrimsonPro-Medium.ttf');
+    src: url('/fonts/CrimsonPro-Regular.woff2');
 }
 
 html {
