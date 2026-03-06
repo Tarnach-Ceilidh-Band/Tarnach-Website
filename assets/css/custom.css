@@ -1,0 +1,40 @@
+@layer utilities {  
+  .from-neutral-500 {
+    --tw-gradient-from: rgba(var(--color-neutral-500), 1);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .bg-gradient-to-b {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops))
+  }
+  .tarnach-gradient {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(180deg, rgb(14.51% 31.373% 43.922%) 0%, rgb(14.51% 31.373% 43.922% / 0.87890625) 6.25%, rgb(14.51% 31.373% 43.922% / 0.765625) 12.5%, rgb(14.51% 31.373% 43.922% / 0.66015625) 18.75%, rgb(14.51% 31.373% 43.922% / 0.5625) 25%, rgb(14.51% 31.373% 43.922% / 0.47265625) 31.25%, rgb(14.51% 31.373% 43.922% / 0.390625) 37.5%, rgb(14.51% 31.373% 43.922% / 0.31640625) 43.75%, rgb(14.51% 31.373% 43.922% / 0.25) 50%, rgb(14.51% 31.373% 43.922% / 0.19140625) 56.25%, rgb(14.51% 31.373% 43.922% / 0.140625) 62.5%, rgb(14.51% 31.373% 43.922% / 0.09765625) 68.75%, rgb(14.51% 31.373% 43.922% / 0.0625) 75%, rgb(14.51% 31.373% 43.922% / 0.03515625) 81.25%, rgb(14.51% 31.373% 43.922% / 0.015625) 87.5%, rgb(14.51% 31.373% 43.922% / 0.00390625) 93.75%, rgb(14.51% 31.373% 43.922% / 0) 100% )
+  }
+  .tarnach-gradient2 {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(180deg, rgb(14.51% 31.373% 43.922%) 0%, rgb(14.51% 31.373% 43.922% / 0.7724761962890625) 6.25%, rgb(14.51% 31.373% 43.922% / 0.586181640625) 12.5%, rgb(14.51% 31.373% 43.922% / 0.4358062744140625) 18.75%, rgb(14.51% 31.373% 43.922% / 0.31640625) 25%, rgb(14.51% 31.373% 43.922% / 0.2234039306640625) 31.25%, rgb(14.51% 31.373% 43.922% / 0.152587890625) 37.5%, rgb(14.51% 31.373% 43.922% / 0.1001129150390625) 43.75%, rgb(14.51% 31.373% 43.922% / 0.0625) 50%, rgb(14.51% 31.373% 43.922% / 0.0366363525390625) 56.25%, rgb(14.51% 31.373% 43.922% / 0.019775390625) 62.5%, rgb(14.51% 31.373% 43.922% / 0.0095367431640625) 68.75%, rgb(14.51% 31.373% 43.922% / 0.00390625) 75%, rgb(14.51% 31.373% 43.922% / 0.0012359619140625) 81.25%, rgb(14.51% 31.373% 43.922% / 0.000244140625) 87.5%, rgb(14.51% 31.373% 43.922% / 0.0000152587890625) 93.75%, rgb(14.51% 31.373% 43.922% / 0) 100% )
+  }
+  .min-h-\[100px\] {
+    min-height: 100px;
+  }
+  .text-secondary-600 {
+    color: rgba(var(--color-secondary-600), 1);
+  }
+  .text-secondary-400 {
+    color: rgba(var(--color-secondary-400), 1);
+  }
+  .hover-change:hover {
+    color: rgba(var(--color-secondary-400), 1);
+  }
+}
+
+@font-face {
+    font-family: font;
+    src: url('/fonts/CrimsonPro-Medium.ttf');
+}
+
+html {
+    font-family: font;
+    font-size: 14pt;
+}
