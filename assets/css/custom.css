@@ -1,3 +1,7 @@
+:root {
+  --gradient-length: 40%; 
+}
+
 @layer utilities {  
   .from-neutral-500 {
     --tw-gradient-from: rgba(var(--color-neutral-500), 1);
@@ -14,6 +18,61 @@
   .tarnach-gradient2 {
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(180deg, rgb(14.51% 31.373% 43.922%) 0%, rgb(14.51% 31.373% 43.922% / 0.7724761962890625) 6.25%, rgb(14.51% 31.373% 43.922% / 0.586181640625) 12.5%, rgb(14.51% 31.373% 43.922% / 0.4358062744140625) 18.75%, rgb(14.51% 31.373% 43.922% / 0.31640625) 25%, rgb(14.51% 31.373% 43.922% / 0.2234039306640625) 31.25%, rgb(14.51% 31.373% 43.922% / 0.152587890625) 37.5%, rgb(14.51% 31.373% 43.922% / 0.1001129150390625) 43.75%, rgb(14.51% 31.373% 43.922% / 0.0625) 50%, rgb(14.51% 31.373% 43.922% / 0.0366363525390625) 56.25%, rgb(14.51% 31.373% 43.922% / 0.019775390625) 62.5%, rgb(14.51% 31.373% 43.922% / 0.0095367431640625) 68.75%, rgb(14.51% 31.373% 43.922% / 0.00390625) 75%, rgb(14.51% 31.373% 43.922% / 0.0012359619140625) 81.25%, rgb(14.51% 31.373% 43.922% / 0.000244140625) 87.5%, rgb(14.51% 31.373% 43.922% / 0.0000152587890625) 93.75%, rgb(14.51% 31.373% 43.922% / 0) 100% )
+  }
+  .white-gradient {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(0deg, rgb(99.608% 99.608% 99.608%) 0%, rgb(99.608% 99.608% 99.608% / 0.9998779296875) 6.25%, rgb(99.609% 99.609% 99.609% / 0.998046875) 12.5%, rgb(99.612% 99.612% 99.612% / 0.9901123046875) 18.75%, rgb(99.62% 99.62% 99.62% / 0.96875) 25%, rgb(99.638% 99.638% 99.638% / 0.9237060546875) 31.25%, rgb(99.67% 99.67% 99.67% / 0.841796875) 37.5%, rgb(99.723% 99.723% 99.723% / 0.7069091796875) 43.75%, rgb(99.804% 99.804% 99.804% / 0.5) 50%, rgb(99.885% 99.885% 99.885% / 0.2930908203125) 56.25%, rgb(99.938% 99.938% 99.938% / 0.158203125) 62.5%, rgb(99.97% 99.97% 99.97% / 0.0762939453125) 68.75%, rgb(99.988% 99.988% 99.988% / 0.03125) 75%, rgb(99.996% 99.996% 99.996% / 0.0098876953125) 81.25%, rgb(99.999% 99.999% 99.999% / 0.001953125) 87.5%, rgb(100% 100% 100% / 0.0001220703125) 93.75%, rgb(100% 100% 100% / 0) 100% )
+  }
+  .white-gradient-save {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(0deg, 
+                                    rgb(99.608% 99.608% 99.608%) 0%, 
+                                    rgb(99.608% 99.608% 99.608% / 0.9998779296875) 6.25%, 
+                                    rgb(99.609% 99.609% 99.609% / 0.998046875) 12.5%, 
+                                    rgb(99.612% 99.612% 99.612% / 0.9901123046875) 18.75%, 
+                                    rgb(99.62% 99.62% 99.62% / 0.96875) 25%, 
+                                    rgb(99.638% 99.638% 99.638% / 0.9237060546875) 31.25%, 
+                                    rgb(99.67% 99.67% 99.67% / 0.841796875) 37.5%, 
+                                    rgb(99.723% 99.723% 99.723% / 0.7069091796875) 43.75%, 
+                                    rgb(99.804% 99.804% 99.804% / 0.5) 50%, 
+                                    rgb(99.885% 99.885% 99.885% / 0.2930908203125) 56.25%, 
+                                    rgb(99.938% 99.938% 99.938% / 0.158203125) 62.5%, 
+                                    rgb(99.97% 99.97% 99.97% / 0.0762939453125) 68.75%, 
+                                    rgb(99.988% 99.988% 99.988% / 0.03125) 75%, 
+                                    rgb(99.996% 99.996% 99.996% / 0.0098876953125) 81.25%, 
+                                    rgb(99.999% 99.999% 99.999% / 0.001953125) 87.5%, 
+                                    rgb(100% 100% 100% / 0.0001220703125) 93.75%, 
+                                    rgb(100% 100% 100% / 0) 100% )
+  }
+  .white-gradient-compressed {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(0deg, 
+                                    rgb(99.608% 99.608% 99.608%) 0%, 
+                                    rgb(99.608% 99.608% 99.608% / 0.9998779296875) calc(var(--gradient-length) - (var(--gradient-length)/16)*15), 
+                                    rgb(99.609% 99.609% 99.609% / 0.998046875) calc(var(--gradient-length) - (var(--gradient-length)/16)*14), 
+                                    rgb(99.612% 99.612% 99.612% / 0.9901123046875) calc(var(--gradient-length) - (var(--gradient-length)/16)*13), 
+                                    rgb(99.62% 99.62% 99.62% / 0.96875) calc(var(--gradient-length) - (var(--gradient-length)/16)*12), 
+                                    rgb(99.638% 99.638% 99.638% / 0.9237060546875) calc(var(--gradient-length) - (var(--gradient-length)/16)*11), 
+                                    rgb(99.67% 99.67% 99.67% / 0.841796875) calc(var(--gradient-length) - (var(--gradient-length)/16)*10), 
+                                    rgb(99.723% 99.723% 99.723% / 0.7069091796875) calc(var(--gradient-length) - (var(--gradient-length)/16)*9), 
+                                    rgb(99.804% 99.804% 99.804% / 0.5) calc(var(--gradient-length) - (var(--gradient-length)/16)*8), 
+                                    rgb(99.885% 99.885% 99.885% / 0.2930908203125) calc(var(--gradient-length) - (var(--gradient-length)/16)*7), 
+                                    rgb(99.938% 99.938% 99.938% / 0.158203125) calc(var(--gradient-length) - (var(--gradient-length)/16)*6), 
+                                    rgb(99.97% 99.97% 99.97% / 0.0762939453125) calc(var(--gradient-length) - (var(--gradient-length)/16)*5), 
+                                    rgb(99.988% 99.988% 99.988% / 0.03125) calc(var(--gradient-length) - (var(--gradient-length)/16)*4), 
+                                    rgb(99.996% 99.996% 99.996% / 0.0098876953125) calc(var(--gradient-length) - (var(--gradient-length)/16)*3), 
+                                    rgb(99.999% 99.999% 99.999% / 0.001953125) calc(var(--gradient-length) - (var(--gradient-length)/16)*2), 
+                                    rgb(100% 100% 100% / 0.0001220703125) calc(var(--gradient-length) - (var(--gradient-length)/16)*1), 
+                                    rgb(100% 100% 100% / 0) var(--gradient-length), 
+                                    rgb(100% 100% 100% / 0) 100% )
+  }
+  .white-gradient2 {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(0deg, rgb(99.608% 99.608% 99.608%) 0%, rgb(99.697% 99.697% 99.697% / 0.7724761962890625) 6.25%, rgb(99.77% 99.77% 99.77% / 0.586181640625) 12.5%, rgb(99.829% 99.829% 99.829% / 0.4358062744140625) 18.75%, rgb(99.876% 99.876% 99.876% / 0.31640625) 25%, rgb(99.912% 99.912% 99.912% / 0.2234039306640625) 31.25%, rgb(99.94% 99.94% 99.94% / 0.152587890625) 37.5%, rgb(99.961% 99.961% 99.961% / 0.1001129150390625) 43.75%, rgb(99.975% 99.975% 99.975% / 0.0625) 50%, rgb(99.986% 99.986% 99.986% / 0.0366363525390625) 56.25%, rgb(99.992% 99.992% 99.992% / 0.019775390625) 62.5%, rgb(99.996% 99.996% 99.996% / 0.0095367431640625) 68.75%, rgb(99.998% 99.998% 99.998% / 0.00390625) 75%, rgb(100% 100% 100% / 0.0012359619140625) 81.25%, rgb(100% 100% 100% / 0.000244140625) 87.5%, rgb(100% 100% 100% / 0.0000152587890625) 93.75%, rgb(100% 100% 100% / 0) 100% )
+  }
+  .white-gradient3 {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(0deg, rgb(99.608% 99.608% 99.608%) 0%, rgb(99.677% 99.677% 99.677% / 0.823974609375) 6.25%, rgb(99.737% 99.737% 99.737% / 0.669921875) 12.5%, rgb(99.79% 99.79% 99.79% / 0.536376953125) 18.75%, rgb(99.835% 99.835% 99.835% / 0.421875) 25%, rgb(99.873% 99.873% 99.873% / 0.324951171875) 31.25%, rgb(99.904% 99.904% 99.904% / 0.244140625) 37.5%, rgb(99.93% 99.93% 99.93% / 0.177978515625) 43.75%, rgb(99.951% 99.951% 99.951% / 0.125) 50%, rgb(99.967% 99.967% 99.967% / 0.083740234375) 56.25%, rgb(99.979% 99.979% 99.979% / 0.052734375) 62.5%, rgb(99.988% 99.988% 99.988% / 0.030517578125) 68.75%, rgb(99.994% 99.994% 99.994% / 0.015625) 75%, rgb(99.997% 99.997% 99.997% / 0.006591796875) 81.25%, rgb(99.999% 99.999% 99.999% / 0.001953125) 87.5%, rgb(100% 100% 100% / 0.000244140625) 93.75%, rgb(100% 100% 100% / 0) 100% )
   }
   .min-h-\[100px\] {
     min-height: 100px;
@@ -36,8 +95,25 @@
   .text-black {
     color: #000000;
   }
+  .bg-reviews {
+    background-color: #ffffff;
+  }
+  .min-h-reviews {
+    min-height: calc(var(--spacing) * 20);
+  }
+  .text-gray {
+    color: rgb(85, 85, 85)
+  }
   .max-h-logo {
     max-height: calc(var(--spacing) * 40);
+  }
+  .py-review { 
+    padding-top: 15rem; 
+    padding-bottom: 2rem; 
+  }
+  .font-review {
+    font-style: italic;
+    font-weight: var(--font-weight-light);
   }
 }
 
@@ -65,3 +141,79 @@ html {
     font-family: "Crimson Pro";
     font-size: 14pt;
 }
+
+
+@keyframes change-text {
+  7.5% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  17.5% {
+    opacity: 1
+  }
+  32.5% {
+    opacity: 1;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  42.5% {
+    opacity: 1
+  }
+  57.5% {
+    opacity: 1;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  67.5% {
+    opacity: 1
+  }
+  82.5% {
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  92.5% {
+    opacity: 1;
+  }
+  0% {
+    content: "\"Make you want to dance again and again\""
+  }
+  25% {
+    content: "\"Fantastic cèilidh band\"";
+  }
+  50% {
+    content: "\"They got everyone up dancing!\"";
+  }
+  75% {
+    content: "\"Talented musicians\"";
+  }
+}
+
+@keyframes fade {
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+}
+
+.reviews::after {
+  display: block;
+  content: "\"Make you want to dance again and again\"";
+/* animation-duration = number of keyframes * duration per keyframe */
+  animation-name: change-text; 
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+

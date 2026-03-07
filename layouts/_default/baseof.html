@@ -32,17 +32,14 @@
           {{- partial "scroll-to-top.html" . -}}
         {{ end }}
       </main>
-      {{ if .IsHome }}
-        <footer id="test" class="py-10 print:hidden" > 
-          <h2 class="mt-0 mb-0 text-xl text-black dark:text-neutral-300">
-            hello and welcome
-          </h2>
-        </footer>
-      {{ else }}
-        {{- partial "footer.html" . -}}
-        {{ if site.Params.enableSearch | default false }}
-          {{- partial "search.html" . -}}
-        {{ end }}
+      <!-- {{ if .IsHome }}
+        <div class="py-review print:hidden items-center justify-center text-center" > 
+          <div class="reviews mt-0 mb-0 text-2xl text-gray dark:text-neutral-300"></div>
+        </div>
+      {{ end }} -->
+      {{- partial "footer.html" . -}}
+      {{ if site.Params.enableSearch | default false }}
+        {{- partial "search.html" . -}}
       {{ end }}
     </div>
   </body>
