@@ -1,5 +1,8 @@
 :root {
-  --gradient-length: 40%; 
+  --gradient-length: 70%; 
+  --blue-gradient-length: 125%; 
+  --font-weight-light: 300;
+  --font-weight-normal: 800;
 }
 
 @layer utilities {  
@@ -17,32 +20,29 @@
   }
   .tarnach-gradient2 {
     --tw-gradient-position: to bottom in oklab;
-    background-image: linear-gradient(180deg, rgb(14.51% 31.373% 43.922%) 0%, rgb(14.51% 31.373% 43.922% / 0.7724761962890625) 6.25%, rgb(14.51% 31.373% 43.922% / 0.586181640625) 12.5%, rgb(14.51% 31.373% 43.922% / 0.4358062744140625) 18.75%, rgb(14.51% 31.373% 43.922% / 0.31640625) 25%, rgb(14.51% 31.373% 43.922% / 0.2234039306640625) 31.25%, rgb(14.51% 31.373% 43.922% / 0.152587890625) 37.5%, rgb(14.51% 31.373% 43.922% / 0.1001129150390625) 43.75%, rgb(14.51% 31.373% 43.922% / 0.0625) 50%, rgb(14.51% 31.373% 43.922% / 0.0366363525390625) 56.25%, rgb(14.51% 31.373% 43.922% / 0.019775390625) 62.5%, rgb(14.51% 31.373% 43.922% / 0.0095367431640625) 68.75%, rgb(14.51% 31.373% 43.922% / 0.00390625) 75%, rgb(14.51% 31.373% 43.922% / 0.0012359619140625) 81.25%, rgb(14.51% 31.373% 43.922% / 0.000244140625) 87.5%, rgb(14.51% 31.373% 43.922% / 0.0000152587890625) 93.75%, rgb(14.51% 31.373% 43.922% / 0) 100% )
+    background-image: linear-gradient(180deg, 
+                                    rgb(14.51% 31.373% 43.922%) 0%, 
+                                    rgb(14.51% 31.373% 43.922% / 0.7724761962890625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*15), 
+                                    rgb(14.51% 31.373% 43.922% / 0.586181640625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*14), 
+                                    rgb(14.51% 31.373% 43.922% / 0.4358062744140625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*13), 
+                                    rgb(14.51% 31.373% 43.922% / 0.31640625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*12), 
+                                    rgb(14.51% 31.373% 43.922% / 0.2234039306640625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*11), 
+                                    rgb(14.51% 31.373% 43.922% / 0.152587890625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*10), 
+                                    rgb(14.51% 31.373% 43.922% / 0.1001129150390625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*9), 
+                                    rgb(14.51% 31.373% 43.922% / 0.0625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*8), 
+                                    rgb(14.51% 31.373% 43.922% / 0.0366363525390625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*7), 
+                                    rgb(14.51% 31.373% 43.922% / 0.019775390625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*6), 
+                                    rgb(14.51% 31.373% 43.922% / 0.0095367431640625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*5), 
+                                    rgb(14.51% 31.373% 43.922% / 0.00390625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*4), 
+                                    rgb(14.51% 31.373% 43.922% / 0.0012359619140625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*3), 
+                                    rgb(14.51% 31.373% 43.922% / 0.000244140625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*2), 
+                                    rgb(14.51% 31.373% 43.922% / 0.0000152587890625) calc(var(--blue-gradient-length) - (var(--blue-gradient-length)/16)*1), 
+                                    rgb(14.51% 31.373% 43.922% / 0) var(--blue-gradient-length), 
+                                    rgb(14.51% 31.373% 43.922% / 0) 100% )
   }
   .white-gradient {
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(0deg, rgb(99.608% 99.608% 99.608%) 0%, rgb(99.608% 99.608% 99.608% / 0.9998779296875) 6.25%, rgb(99.609% 99.609% 99.609% / 0.998046875) 12.5%, rgb(99.612% 99.612% 99.612% / 0.9901123046875) 18.75%, rgb(99.62% 99.62% 99.62% / 0.96875) 25%, rgb(99.638% 99.638% 99.638% / 0.9237060546875) 31.25%, rgb(99.67% 99.67% 99.67% / 0.841796875) 37.5%, rgb(99.723% 99.723% 99.723% / 0.7069091796875) 43.75%, rgb(99.804% 99.804% 99.804% / 0.5) 50%, rgb(99.885% 99.885% 99.885% / 0.2930908203125) 56.25%, rgb(99.938% 99.938% 99.938% / 0.158203125) 62.5%, rgb(99.97% 99.97% 99.97% / 0.0762939453125) 68.75%, rgb(99.988% 99.988% 99.988% / 0.03125) 75%, rgb(99.996% 99.996% 99.996% / 0.0098876953125) 81.25%, rgb(99.999% 99.999% 99.999% / 0.001953125) 87.5%, rgb(100% 100% 100% / 0.0001220703125) 93.75%, rgb(100% 100% 100% / 0) 100% )
-  }
-  .white-gradient-save {
-    --tw-gradient-position: to bottom in oklab;
-    background-image: linear-gradient(0deg, 
-                                    rgb(99.608% 99.608% 99.608%) 0%, 
-                                    rgb(99.608% 99.608% 99.608% / 0.9998779296875) 6.25%, 
-                                    rgb(99.609% 99.609% 99.609% / 0.998046875) 12.5%, 
-                                    rgb(99.612% 99.612% 99.612% / 0.9901123046875) 18.75%, 
-                                    rgb(99.62% 99.62% 99.62% / 0.96875) 25%, 
-                                    rgb(99.638% 99.638% 99.638% / 0.9237060546875) 31.25%, 
-                                    rgb(99.67% 99.67% 99.67% / 0.841796875) 37.5%, 
-                                    rgb(99.723% 99.723% 99.723% / 0.7069091796875) 43.75%, 
-                                    rgb(99.804% 99.804% 99.804% / 0.5) 50%, 
-                                    rgb(99.885% 99.885% 99.885% / 0.2930908203125) 56.25%, 
-                                    rgb(99.938% 99.938% 99.938% / 0.158203125) 62.5%, 
-                                    rgb(99.97% 99.97% 99.97% / 0.0762939453125) 68.75%, 
-                                    rgb(99.988% 99.988% 99.988% / 0.03125) 75%, 
-                                    rgb(99.996% 99.996% 99.996% / 0.0098876953125) 81.25%, 
-                                    rgb(99.999% 99.999% 99.999% / 0.001953125) 87.5%, 
-                                    rgb(100% 100% 100% / 0.0001220703125) 93.75%, 
-                                    rgb(100% 100% 100% / 0) 100% )
   }
   .white-gradient-compressed {
     --tw-gradient-position: to bottom in oklab;
@@ -114,6 +114,23 @@
   .font-review {
     font-style: italic;
     font-weight: var(--font-weight-light);
+  }
+  .max-w-prose {
+    max-width: 75ch;
+  }
+  .bg-primary-400 {
+    background-color: rgba(var(--color-primary-400), 1);
+  }
+  .bg-white {
+    background-color: #ffffff;
+  }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
+  .prose {
+    --tw-prose-body: rgb(125, 125, 125);
+    --tw-prose-headings: rgb(125, 125, 125);
+    --tw-prose-bullets: rgb(125, 125, 125);
   }
 }
 

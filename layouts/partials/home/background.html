@@ -34,6 +34,9 @@
               class="nozoom mt-0 mr-0 mb-0 ml-0 h-[1000px] w-full object-cover"
               src="{{ $homepageImage.RelPermalink }}"
               role="presentation"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
               {{ if $style }}style="{{ $style | safeCSS }}"{{ end }}>
             <!-- <div
               class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-transparent mix-blend-normal dark:from-neutral-800"></div>
@@ -47,7 +50,7 @@
           {{ end }}
         </div>
         <!-- <div class="relative flex flex-col items-center justify-center px-1 py-1 text-center"> -->
-          <div class="relative flex flex-col items-center justify-center px-1 py-1 text-center"> 
+          <div class="relative flex flex-col items-center justify-center px-1 py-1"> 
           {{ with .Site.Params.Author.image }}
             {{ $authorImage := "" }}
             {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
@@ -72,7 +75,7 @@
                 data-zoom-src="{{ $squareImage.RelPermalink }}">
               -->
                 <img
-                class="mb-2 max-h-logo"
+                class="mb-6 max-h-logo"
                 alt="{{ $.Site.Params.Author.name | default `Author` }}"
                 src="{{ $authorImage.RelPermalink }}">
             {{ end }}
@@ -86,7 +89,7 @@
               {{ . | markdownify }}
             </h2>
           {{ end }}
-          <div class="mt-3 mb-10 text-2xl">
+          <div class="mt-6 mb-6 text-2xl">
             {{ with .Site.Params.Author.links }}
               <div class="flex flex-wrap">
                 {{ range $links := . }}
@@ -105,8 +108,9 @@
               </div>
             {{ end }}
           </div>
-          <h1 class="py-review mb-2 text-neutral-800 reviews text-2xl font-review">
+          <h1 class="mt-4 mb-6 text-neutral-800 text-xl font-review">Fiddle &nbsp;&nbsp; - &nbsp;&nbsp; Drums &nbsp;&nbsp; - &nbsp;&nbsp; Piano
           </h1> 
+          <div class="h-70 w-full"> </div>
           <section class="prose dark:prose-invert w-full">{{ .Content }}</section>
         </div>
       </div>
@@ -117,9 +121,14 @@
   {{ partial "recent-articles/main.html" . }}
 </section>
 {{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}
+ <!--
   <div
     id="background-blur"
     class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-xl bg-neutral-100/75 dark:bg-neutral-800/60"></div>
+-->
+  <div
+    id="background-blur"
+    class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-white" ></div>
   {{ $backgroundBlur := resources.Get "js/background-blur.js" }}
   {{ $backgroundBlur = $backgroundBlur | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
   <script

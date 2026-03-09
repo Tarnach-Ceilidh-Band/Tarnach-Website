@@ -461,7 +461,7 @@
     }
     :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
       color: var(--tw-prose-bold);
-      font-weight: 600;
+      font-weight: 300;
     }
     :where(a strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
       color: inherit;

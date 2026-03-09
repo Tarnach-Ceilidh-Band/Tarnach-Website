@@ -11,28 +11,33 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+  name = "About"
+  url = "#about"
+  weight = 10
+
+[[main]]
   name = "Meet the Band"
-  pageRef = "meet-the-band"
+  url = "#meet-the-band"
   weight = 10
 
 [[main]]
   name = "FAQs"
-  pageRef = "faqs"
+  url = "#faqs"
   weight = 20
 
 [[main]]
   name = "Services"
-  pageRef = "services"
+  url = "#services"
   weight = 30
 
 [[main]]
   name = "Media"
-  pageRef = "media"
+  url = "#media"
   weight = 40
 
 [[main]]
-  name = "Contact Us"
-  pageRef = "contact-us"
+  name = "Enquire"
+  url = "#enquire"
   weight = 50
 
 #[[main]]
