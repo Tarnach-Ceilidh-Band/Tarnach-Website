@@ -1,9 +1,9 @@
 {{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
-<article class="prose dark:prose-invert max-w-full">
+<article class="max-w-full prose dark:prose-invert">
   <div class="relative">
     <div class="absolute inset-x-0 bottom-0 h-1/2"></div>
     <div class="mx-auto max-w-7xl p-0">
-      <div class="relative sm:overflow-hidden">
+      <div class="relative overflow-visible">
         <div class="fixed inset-x-0 top-0 -z-10">
           {{ $useDefault := true }}
           {{ $homepageImage := "" }}
@@ -110,8 +110,8 @@
           </div>
           <h1 class="mt-4 mb-6 text-neutral-800 text-xl font-review">Fiddle &nbsp;&nbsp; - &nbsp;&nbsp; Drums &nbsp;&nbsp; - &nbsp;&nbsp; Piano
           </h1> 
-          <div class="h-70 w-full"> </div>
-          <section class="prose dark:prose-invert w-full">{{ .Content }}</section>
+          <div class="h-gap-to-body w-full"> </div>
+          <section class="w-full">{{ .Content }}</section>
         </div>
       </div>
     </div>
@@ -136,6 +136,7 @@
     src="{{ $backgroundBlur.RelPermalink }}"
     integrity="{{ $backgroundBlur.Data.Integrity }}"
     data-blur-id="background-blur"
+    data-scroll-divisor=600
     data-image-id="background-image"
     {{ if $homepageImage }}data-image-url="{{ $homepageImage.RelPermalink }}"{{ end }}></script>
 {{ end }}

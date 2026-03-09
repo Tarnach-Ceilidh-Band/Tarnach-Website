@@ -3,6 +3,9 @@
   --blue-gradient-length: 125%; 
   --font-weight-light: 300;
   --font-weight-normal: 800;
+  --tarnach-container: 60rem;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: calc(2.5 / 3);
 }
 
 @layer utilities {  
@@ -116,7 +119,7 @@
     font-weight: var(--font-weight-light);
   }
   .max-w-prose {
-    max-width: 75ch;
+    max-width: 1ch;
   }
   .bg-primary-400 {
     background-color: rgba(var(--color-primary-400), 1);
@@ -124,13 +127,82 @@
   .bg-white {
     background-color: #ffffff;
   }
-  .h-70 {
-    height: calc(var(--spacing) * 70);
+  .h-gap-to-body {
+    height: calc(var(--spacing) * 100);
+  }
+  .h-45 {
+    height: calc(var(--spacing) * 45);
+  }
+  .h-35 {
+    height: calc(var(--spacing) * 35);
+  }
+  .h-25 {
+    height: calc(var(--spacing) * 25);
   }
   .prose {
     --tw-prose-body: rgb(125, 125, 125);
     --tw-prose-headings: rgb(125, 125, 125);
     --tw-prose-bullets: rgb(125, 125, 125);
+  }
+  .max-tarnach-content-width {
+    max-width: var(--tarnach-container);
+  }
+  .tarnach-heading {
+    float: left;
+    font-weight: var(--font-weight-light);
+    font-style: italic;
+    color: rgba(var(--color-secondary-600), 1);
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+    margin-bottom: calc(var(--spacing) * 2);
+    margin-top: calc(var(--spacing) * 2);
+    margin-right: calc(var(--spacing) * 6);
+    position: relative;
+  }
+  .tarnach-hr {
+    height: 2px;
+    border-width: 0;
+    background-color: rgba(var(--color-secondary-600), 1);
+    margin: 0;
+  }
+  .tarnach-p {
+    margin-top: calc(var(--spacing) * 2)
+  }
+  .tarnach-textblock {
+    width: 100%;
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+  .tarnach-gallery {
+    width: calc(100vw - 10px);
+    position: relative;
+    left: calc(-50vw + 50% + 5px);
+  }
+  .headshot-image-right {
+    height: calc(var(--spacing) * 70);
+    float: left;
+    margin-top: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--spacing) * 2);
+    position: relative;
+    object-fit: cover;
+    left: 20vw;
+    object-position: left top;
+    max-width: calc(100% - 20vw + ((100vw - 100%) / 2) - 5px);
+  }
+  .headshot-image-left {
+    height: calc(var(--spacing) * 70);
+    float: right;
+    margin-top: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--spacing) * 2);
+    position: relative;
+    right: 20vw;
+    object-fit: cover;
+    object-position: right top;
+    max-width: calc(100% - 20vw + ((100vw - 100%) / 2) - 5px);
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -232,5 +304,23 @@ html {
   animation-iteration-count: infinite;
   animation-delay: 2s;
   animation-timing-function: linear;
+}
+
+
+.tarnach-p::before {
+  content: "";
+  width: 10em;
+  display: block;
+  overflow: hidden;
+  /* For Demonstration 
+  border: 1px solid green; */
+}
+.tarnach-p::after {
+  content: "";
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  /* For Demonstration 
+  border: 1px solid green; */
 }
 

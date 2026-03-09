@@ -16,29 +16,29 @@
   weight = 10
 
 [[main]]
-  name = "Meet the Band"
-  url = "#meet-the-band"
-  weight = 10
+  name = "Media"
+  url = "#media"
+  weight = 20
 
 [[main]]
-  name = "FAQs"
-  url = "#faqs"
-  weight = 20
+  name = "Meet the Band"
+  url = "#meet-the-band"
+  weight = 30
 
 [[main]]
   name = "Services"
   url = "#services"
-  weight = 30
+  weight = 40
 
 [[main]]
-  name = "Media"
-  url = "#media"
-  weight = 40
+  name = "FAQs"
+  url = "#faqs"
+  weight = 50
 
 [[main]]
   name = "Enquire"
   url = "#enquire"
-  weight = 50
+  weight = 60
 
 #[[main]]
 #  name = "example sub-menu 1"

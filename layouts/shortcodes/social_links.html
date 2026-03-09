@@ -1,0 +1,22 @@
+<div class="mt-6 mb-6 center flex text-4xl flex-col">
+{{ with .Site.Params.Author.links }}
+    <p class="tarnach-p text-base" style="text-align:center; max-width:30ch;">
+        Want to see more? We regularly post clips on our social media channels - check them out via the links below!
+    </p>
+    <div class="flex flex-wrap">
+    {{ range $links := . }}
+        {{ range $name, $url := $links }}
+        <a
+            class="text-secondary-600 hover-change dark:text-primary-200 px-1"
+            href="{{ $url }}"
+            target="_blank"
+            aria-label="{{ $name | title }}"
+            title="{{ $name | title }}"
+            rel="me noopener noreferrer">
+            {{ partial "icon.html" $name }}
+        </a>
+        {{ end }}
+    {{ end }}
+    </div>
+{{ end }}
+</div>

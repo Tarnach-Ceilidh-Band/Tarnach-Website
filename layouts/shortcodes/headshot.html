@@ -1,0 +1,8 @@
+{{ $heading := .Get "heading" }}
+{{ $imagepath := .Get "imagepath" }}
+{{ $right := .Get "right" }}
+
+<section>
+    <img src="{{- $imagepath -}}" class="{{ if $right }}headshot-image-right{{ else }}headshot-image-left{{ end }}" />
+    {{- .Inner  -}}
+</section>

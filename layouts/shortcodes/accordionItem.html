@@ -7,7 +7,7 @@
 
 {{ $title := .Get "title" | default (.Get "header") }}
 {{ $icon := .Get "icon" }}
-{{ $md := .Get "md" | default true }}
+{{ $md := .Get "md" | default false }}
 {{ $open := .Get "open" | default false }}
 {{ $isOpen := or (eq $open true) (eq $open "true") }}
 

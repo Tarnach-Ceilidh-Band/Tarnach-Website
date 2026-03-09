@@ -1,0 +1,11 @@
+{{ $heading := .Get "heading" }}
+{{ $linkref := .Get "linkref" }}
+
+<section class="tarnach-textblock">
+    <h1 class="tarnach-heading">
+        {{ $heading }}
+        <div id="{{- $linkref -}}" class="anchor"></div>
+    </h1>
+    <hr class="tarnach-hr min-w-full"></hr>
+    {{- .Inner  -}}
+</section>

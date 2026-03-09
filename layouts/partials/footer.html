@@ -62,10 +62,21 @@
   </div>
   {{ if not .Site.Params.disableImageZoom | default true }}
     <script>
-      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      const zoom = mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
         margin: 24,
         background: "rgba(0,0,0,0.5)",
         scrollOffset: 0,
+      });
+
+      // This is a hack so that full images are displayed on zoom,
+      // rather than images cropped by object-cover
+      zoom.on('open', event => {
+        event.target.style.height="auto";
+        event.target.style.width="auto";
+      });
+      zoom.on('opened', event => {
+        event.target.style.height=null;
+        event.target.style.width=null;
       });
     </script>
   {{ end }}
