@@ -57,20 +57,22 @@
 {{ define "mobile-main-menu" }}
   {{ range .Site.Menus.main }}
     {{ $submenuId := printf "fullscreen-submenu-%s" (.Identifier | default .Name | anchorize) }}
-    <div class="px-2">
+    {{ $enquire := "Enquire" }}
+    <div>
       <a
         href="{{ .URL }}"
         {{ with or .Name .Pre }}aria-label="{{ . }}"{{ end }}
         {{ if or (strings.HasPrefix .URL "http:" ) (strings.HasPrefix .URL "https:" ) }}
           target="_blank"
         {{ end }}
-        class="flex items-center gap-4 group hover-change text-secondary-600 dark:text-neutral-200">
+        onclick="document.getElementById('mobile-menu-toggle').checked = false;"
+        class="px-2 py-2 flex items-center gap-4 group text-secondary-600 dark:text-neutral-200 {{ if eq .Name $enquire }} hover-change-bg bg-secondary-600 rounded-md max-w-fit {{ else }} hover-change {{ end }}">
         {{ if .Pre }}
           <span class="flex items-center justify-center h-8 w-8 text-2xl">
             {{ partial "icon.html" .Pre }}
           </span>
         {{ end }}
-        <span title="{{ .Title }}" class="text-2xl font-bold tracking-tight">
+        <span title="{{ .Title }}" class="text-2xl font-medium tracking-tight {{ if eq .Name $enquire }} text-white {{ end }}">
           {{ .Name | markdownify }}
         </span>
         {{ if .HasChildren }}

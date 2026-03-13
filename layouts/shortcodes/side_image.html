@@ -1,9 +1,7 @@
-{{ $heading := .Get "heading" }}
 {{ $imagepath := .Get "imagepath" }}
-{{ $right := .Get "right" }}
 
 <section class="tarnach-headshot-section">
-    <img src="{{- $imagepath -}}" class="{{ if $right }}headshot-image-right{{ else }}headshot-image-left{{ end }}" />
+    <img src="{{- $imagepath -}}" class="tarnach-side_image" />
     {{- .Inner  -}}
     <div class="w-full" style="display:block; overflow:hidden; margin:0"></div>
 </section>

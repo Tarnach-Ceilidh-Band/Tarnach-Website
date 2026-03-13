@@ -75,7 +75,7 @@
                 data-zoom-src="{{ $squareImage.RelPermalink }}">
               -->
                 <img
-                class="mb-6 max-h-logo"
+                class="mb-6 w-logo"
                 alt="{{ $.Site.Params.Author.name | default `Author` }}"
                 src="{{ $authorImage.RelPermalink }}">
             {{ end }}
@@ -89,6 +89,7 @@
               {{ . | markdownify }}
             </h2>
           {{ end }}
+          <!--
           <div class="mt-6 mb-6 text-2xl">
             {{ with .Site.Params.Author.links }}
               <div class="flex flex-wrap">
@@ -108,8 +109,22 @@
               </div>
             {{ end }}
           </div>
-          <h1 class="mt-4 mb-6 text-neutral-800 text-xl font-review">Fiddle &nbsp;&nbsp; - &nbsp;&nbsp; Drums &nbsp;&nbsp; - &nbsp;&nbsp; Piano
+        -->
+          <h1 class="mt-4 mb-6 text-neutral-800 text-xl reviews font-review text-center min-h-reviews">
           </h1> 
+          <div class="h-gap-to-button w-full"> </div>
+          <div class="mt-6 mb-6 text-4xl">
+            {{ with .Site.Params.Author.links }}
+              <div class="flex flex-wrap">
+                    <a
+                      class="text-neutral-900 hover-change2 dark:text-primary-200 px-1 down-arrow-button"
+                      href="#about"
+                      rel="me noopener noreferrer">
+                      {{ partial "icon.html" "down-arrow" }}
+                    </a>
+              </div>
+            {{ end }}
+          </div>
           <div class="h-gap-to-body w-full"> </div>
           <section class="w-full">{{ .Content }}</section>
         </div>
@@ -128,7 +143,7 @@
 -->
   <div
     id="background-blur"
-    class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-white" ></div>
+    class="fixed opacity-0 inset-x-0 top-0 h-full-more single_hero_background nozoom bg-white" ></div>
   {{ $backgroundBlur := resources.Get "js/background-blur.js" }}
   {{ $backgroundBlur = $backgroundBlur | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
   <script

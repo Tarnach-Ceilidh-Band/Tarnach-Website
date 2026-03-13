@@ -1,0 +1,5 @@
+{{ $href := .Get "href"  }}
+
+<a href="{{ $href }}" style="color:rgba(var(--color-secondary-600),1);text-decoration:underline;">
+    {{- .Inner  -}}
+</a>

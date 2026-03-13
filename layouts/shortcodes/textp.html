@@ -1,3 +1,6 @@
-<p class="tarnach-p">
+{{ $gold := .Get "gold" | default false }}
+{{ $italic := .Get "italic" | default false }}
+
+<p class="{{ if $gold }}tarnach-p-gold{{ else }}tarnach-p{{ end }} {{ if $italic }}italic{{ end }}">
     {{- .Inner  -}}
 </p>

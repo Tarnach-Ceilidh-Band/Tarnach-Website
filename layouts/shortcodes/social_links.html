@@ -1,8 +1,8 @@
 <div class="mt-6 mb-6 center flex text-4xl flex-col">
-{{ with .Site.Params.Author.links }}
-    <p class="tarnach-p text-base" style="text-align:center; max-width:30ch;">
-        Want to see more? We regularly post clips on our social media channels - check them out via the links below!
+    <p class="tarnach-p-gold text-base" style="text-align:center; max-width:30ch;">
+        {{ .Inner }}
     </p>
+{{ with .Site.Params.Author.links }}
     <div class="flex flex-wrap">
     {{ range $links := . }}
         {{ range $name, $url := $links }}

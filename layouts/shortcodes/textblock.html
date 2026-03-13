@@ -1,7 +1,11 @@
 {{ $heading := .Get "heading" }}
 {{ $linkref := .Get "linkref" }}
+{{ $background := .Get "background" | default false}}
 
 <section class="tarnach-textblock">
+    {{ if $background }}
+    <div class="tarnach-textblock-background"></div>
+    {{ end }}
     <h1 class="tarnach-heading">
         {{ $heading }}
         <div id="{{- $linkref -}}" class="anchor"></div>

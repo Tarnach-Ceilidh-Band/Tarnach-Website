@@ -1,22 +1,16 @@
 ---
 ---
 
-{{< textblock heading="About" linkref="about" >}}
+{{< textblock heading="About" linkref="about" background=false  >}}
 
   {{< textp >}}
-
     Tàrnach are a Scottish cèilidh band who blend traditional melodies with a modern, energetic sound. We provide a three-piece lineup of experienced professional musicians, and full cèilidh calling so that everyone can enjoy the dances. Whether you are celebrating a wedding or hosting a party, a night of cèilidh dancing courtesy of Tàrnach is the perfect way to bring people together!
-
   {{< /textp>}}
 
   {{< textp >}}
-
     We provide entertainment for all types of events across Scotland and the UK. If you're looking for cèilidh band that will get your party started, don't hesitate to get in touch!
-
   {{< /textp>}}
 
-  {{< textp >}}
-  {{< /textp >}}
 
   {{< gallery >}}
     <img src="images/gallery/1.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
@@ -27,36 +21,37 @@
 
 {{< /textblock >}}
 
-{{< textblock heading="Media" linkref="media" >}}
+{{< textblock heading="Media" linkref="media" background=true >}}
 
   {{< textp >}}
   {{< /textp >}}
 
   {{< youtubeLite id="0PdLtAGpVUM" >}}
+  
   {{< social_links >}}
+    Want to see more? We regularly post clips on our social media channels - check them out via the links below!
+  {{< /social_links >}}
 
 {{< /textblock >}}
 
-{{< textblock heading="Meet the Band" linkref="meet-the-band" >}}
+{{< textblock heading="Meet the Band" linkref="meet-the-band" background=false >}}
 
   {{< textp >}}
-  
     Our lineup consists of three musicians with a wealth of professional experience and a passion for traditional music. Find out a bit more about each of our members below!
-
   {{< /textp>}}
 
   {{< headshot imagepath="images/headshots/ross.jpg" right=true >}}
 
-     {{< textp >}}
+    {{< textp gold=true italic=true >}}
+      Ross Clark - Fiddle
+    {{< /textp >}}
 
-      Ross Clark
-
-      Fiddle
-
+    {{< textp >}}
       Ross is a dynamic fiddle player hailing from Inverness. Introduced to traditional music at an early age, he draws inspiration from his Highland roots as well as from the traditions of Ireland and Cape Breton.
+    {{< /textp >}}
 
-      Since 2018 he has been immersed in the vibrant music scene of Glasgow, where he plays regularly at ceilidhs and sessions. After completing his undergraduate degree, Ross is now pursuing further study at Strathclyde University. 
-
+    {{< textp >}}
+      Since 2018 he has been immersed in the vibrant music scene of Glasgow, where he plays regularly at cèilidh and sessions.
     {{< /textp >}}
 
 
@@ -64,76 +59,82 @@
 
   {{< headshot imagepath="images/headshots/ash.jpg" right=false >}}
 
-     {{< textp >}}
+    {{< textp gold=true italic=true >}}
+      Ashley Edwards - Piano/Caller
+    {{< /textp >}}
 
-          Piano/Caller
+    {{< textp >}}
+      Originally from Edinburgh, Ashley grew up playing trombone and taking part in many brass band competitions. He taught himself piano from a young age and following that guitar.
+    {{< /textp >}}
 
-    Originally from Edinburgh, Ashley grew up playing trombone and taking part in many brass band competitions. He taught himself piano from a young age and following that guitar.
-
-    Ashley is a graduate of the University of Aberdeen where he studied as a first study trombonist. Ashley also has a particular passion for conducting and led the Aberdeen University Concert Band during his time at university.  Ashley graduated with a Bachelor of Music with Education degree and now he teaches music. He continues to enjoy playing trombone as well as piano and guitar and has more recently begun learning the accordion. 
+    {{< textp >}}
+      Ashley is a graduate of the University of Aberdeen where he studied as a first study trombonist. Ashley also has a particular passion for conducting and led the Aberdeen University Concert Band during his time at university. Ashley graduated with a Bachelor of Music with Education degree and now he teaches music. He continues to enjoy playing trombone as well as piano and guitar and has more recently begun learning the accordion. 
     {{< /textp >}}
 
 
   {{< /headshot >}}
 
 
-  {{< textp >}}
-
-    Ian Christie
-
-    Percussion/Caller
-
-    Ian graduated from the University of Aberdeen in June 2018, specialising in percussion performance. After graduating Ian completed a masters in percussion performance in Las Vegas, USA before returning to Scotland in 2020.
-
-    Ian now works with Fife council, teaching percussion and drum kit to primary and secondary pupils, as well as teaching privatley. Professionally, Ian is a session musician and has experience playing in a variety of different musical settings including; orchestras, brass bands, theatre pits and ceilidh bands. 
-    Ashley Edwards
-
-  {{< /textp >}}
+  {{< headshot imagepath="images/headshots/ian.jpg" right=true >}}
 
 
-  {{< textp >}}
+    {{< textp gold=true italic=true >}}
+      Ian Christie - Percussion/Caller
+    {{< /textp >}}
 
-    Band Administrator
+    {{< textp >}}
+      Ian graduated from the University of Aberdeen in June 2018, specialising in percussion performance. After graduating Ian completed a masters in percussion performance in Las Vegas, USA before returning to Scotland in 2020.
+    {{< /textp >}}
 
-    Cairi Edwards
-  
-  {{< /textp >}}
+    {{< textp >}}
+      Ian now works with Fife council, teaching percussion and drum kit to primary and secondary pupils, as well as teaching privately. Professionally, Ian is a session musician and has experience playing in a variety of different musical settings including: orchestras, brass bands, theatre pits and cèilidh bands. 
+    {{< /textp >}}
+
+  {{< /headshot >}}
+
+  {{< side_image imagepath="images/headshots/cairi.png" >}}
+
+    {{< textp gold=true, italic=true >}}
+      Cairi Edwards - Band Administrator
+    {{< /textp >}}
+
+  {{< /side_image >}}
 
 {{< /textblock >}}
 
-{{< textblock heading="Services" linkref="services" >}}
 
-  {{< textp >}}
 
+{{< textblock heading="Services" linkref="services" background=true  >}}
+
+  {{< textp gold=true >}}
   Our cèilidh package is perfect for all kinds of events: weddings, parties, charity evenings, corporate events or student nights. A typical cèilidh package includes a four hour hire of our three-piece band (including a break), dance calling, and a disco set. We have a wide repertoire of cèilidh dances, including old favourites like the Dashing White Sergeant, and less well-known options like the Pat-a-Cake Polka. To ensure that everyone has a chance to get up and dance, we perform a mixture of fast, slow, couples, and group dances. 
-  
   {{< /textp >}}
 
-  {{< textp >}}
-
+  {{< textp gold=true >}}
   We are always happy to tailor your cèilidh to suit your specific event, however here are a few examples:
-
   {{< /textp >}}
 
-  {{< tabs >}}
+  {{< tabs gold=true >}}
 
-      {{< tab label="Example Wedding" >}}
+      {{< tab label="Wedding" >}}
+      Example programme:
       - 6:30 - 8pm: Band arrives, set up and soundchecks
       - 8 - 9.30pm: First dance then into cèilidh set
       - 9.30 - 10.15pm: Break for evening buffet
-      - 10.15 - 11pm: More ceilidh dances
+      - 10.15 - 11pm: More cèilidh dances
       - 11pm - midnight: Disco
       - Last dance: Auld Lang Syne/Loch Lomond
       {{< /tab >}}
 
-      {{< tab label="Example Party" >}}
+      {{< tab label="Party" >}}
+      Example programme:
       - 6:00 - 7:30pm: Band arrives, set up and soundchecks
-      - 7:30 - 8:15pm: First Ceilidh set
+      - 7:30 - 8:15pm: First cèilidh set
       - 8:15 - 9pm: Disco and buffet break
       - 9.00pm: Sing happy birthday and cake cutting/speeches
-      - 9:00 - 9:45pm: More ceilidh dances
+      - 9:00 - 9:45pm: More cèilidh dances
       - 9:45 - 10:15pm: Disco
-      - 10:15 - 11pm: More ceilidh dances
+      - 10:15 - 11pm: More cèilidh dances
       - 11pm - midnight: Disco
       - Last dance: Auld Lang Syne/Loch Lomond
       {{< /tab >}}
@@ -142,10 +143,7 @@
 
 {{< /textblock >}}
 
-{{< textblock heading="FAQs" linkref="faqs" >}}
-
-  {{< textp >}}
-  {{< /textp >}}
+{{< textblock heading="FAQs" linkref="faqs" background=false  >}}
 
   {{< accordion >}}
     {{< accordionItem title="Should I have a cèilidh?" >}}
@@ -190,7 +188,16 @@
 
 {{< /textblock >}}
 
-{{< textblock heading="Enquire" linkref="enquire" >}}
+{{< textblock heading="Enquire" linkref="enquire" background=true  >}}
+
+  {{< textp gold=true >}}
+    If you would like to enquire about hiring Tàrnach for your event, or have any other questions, please do not hesitate to get in touch. You can contact us via email at {{< link href="mailto:TarnachCeilidhBand@gmail.com" >}}TarnachCeilidhBand@gmail.com{{< /link >}}, through our social media channels, or by filling out the contact form below. We look forward to hearing from you!
+  {{< /textp >}}
+  
+  {{< social_links >}}
+  {{< /social_links >}}
+
+  {{< contact_form >}}
 
 {{< /textblock >}}
 

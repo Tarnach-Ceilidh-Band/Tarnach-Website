@@ -3,10 +3,11 @@
 
 {{- $group := .Get "group" -}}
 {{- $default := .Get "default" -}}
+{{ $gold := .Get "gold" }}
 
 
 <div
-  class="tab__container w-full center flex-col"
+  class="tab__container center max-w-xl flex-col rounded-md shadow-2xl mx-auto my-10 p-5"
   {{ with $group }}data-tab-group="{{ . }}"{{ end }}
   {{ with $default }}data-default-tab="{{ . }}"{{ end }}>
   <div class="tab__nav" role="tablist">
@@ -19,7 +20,7 @@
           {{- $isActive = eq $nTabs 0 -}}
         {{- end -}}
         <button
-          class="tab__button px-3 py-2 text-lg border-b-2 border-transparent rounded-t-md hover:bg-neutral-200 dark:hover:bg-neutral-700 {{ if $isActive -}}
+          class="tab__button px-3 py-2 text-lg border-b-2 border-transparent hover:bg-primary-600 dark:hover:bg-neutral-700 {{ if $isActive -}}
             tab--active
           {{- end }}"
           role="tab"

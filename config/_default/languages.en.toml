@@ -17,12 +17,12 @@ title = "Tàrnach Cèilidh Band"
 [params.author]
 #   name = "Ross Clark"
 #   email = "youremail@example.com"
-  image = "images/transparent_logo.png"
+  image = "images/transparent_logo.svg"
 #   imageQuality = 96
 #   headline = "headling"
 #   bio = "bio"
   links = [
-    { email = "mailto:TarnachCeilidhBand@gmail.com" },
+#    { email = "mailto:TarnachCeilidhBand@gmail.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },

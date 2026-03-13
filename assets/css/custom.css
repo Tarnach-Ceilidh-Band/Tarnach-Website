@@ -1,11 +1,12 @@
 :root {
-  --gradient-length: 70%; 
-  --blue-gradient-length: 125%; 
+  --gradient-length: 0%; 
+  --blue-gradient-length: 130%; 
   --font-weight-light: 300;
   --font-weight-normal: 800;
-  --tarnach-container: 60rem;
+  --tarnach-container: 80rem;
   --text-5xl: 3rem;
   --text-5xl--line-height: calc(2.5 / 3);
+  --max-headshot-offset: -10%;
 }
 
 @layer utilities {  
@@ -86,6 +87,9 @@
   .min-h-\[60px\] {
     min-height: 60px;
   }
+  .h-full-more {
+    height: 125%
+  }
   .text-secondary-600 {
     color: rgba(var(--color-secondary-600), 1);
   }
@@ -94,6 +98,12 @@
   }
   .hover-change:hover {
     color: rgba(var(--color-secondary-400), 1);
+  }
+  .hover-change-bg:hover {
+    background-color: rgba(var(--color-secondary-400), 1);
+  }
+  .hover-change2:hover {
+    color: rgba(var(--color-neutral-600), 1);
   }
   .text-black {
     color: #000000;
@@ -107,8 +117,8 @@
   .text-gray {
     color: rgb(85, 85, 85)
   }
-  .max-h-logo {
-    max-height: calc(var(--spacing) * 40);
+  .w-logo {
+    width: min(calc(var(--spacing) * 100), 80vw);
   }
   .py-review { 
     padding-top: 15rem; 
@@ -124,11 +134,20 @@
   .bg-primary-400 {
     background-color: rgba(var(--color-primary-400), 1);
   }
+  .bg-secondary-600 {
+    background-color: rgba(var(--color-secondary-600), 1);;
+  }
   .bg-white {
     background-color: #ffffff;
   }
+  .h-gap-to-button {
+    height: calc(var(--spacing) * 40);
+  }
+  .down-arrow-button {
+    position: relative;
+  }
   .h-gap-to-body {
-    height: calc(var(--spacing) * 100);
+    height: calc(var(--spacing) * 50);
   }
   .h-45 {
     height: calc(var(--spacing) * 45);
@@ -164,45 +183,119 @@
     border-width: 0;
     background-color: rgba(var(--color-secondary-600), 1);
     margin: 0;
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .tarnach-p {
-    margin-top: calc(var(--spacing) * 2)
+    margin-top: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .tarnach-p-gold {
+    margin-top: calc(var(--spacing) * 2);
+    color: rgba(var(--color-secondary-600), 1);
   }
   .tarnach-textblock {
+    position: relative;
     width: 100%;
     margin-bottom: calc(var(--spacing) * 20);
+    margin-top: calc(var(--spacing) * 20);
+    padding-top: calc(var(--spacing) * 10);
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .tarnach-textblock-background {
+    position: absolute;
+    background-color: rgba(var(--color-primary-500), 1);
+    z-index: -1;
+    width: calc(100vw - 5px);
+    left: calc(50% - 50vw);
+    top: 0;
+    bottom: 0;
   }
   .tarnach-gallery {
     width: calc(100vw - 10px);
     position: relative;
     left: calc(-50vw + 50% + 5px);
   }
+  .tarnach-headshot-section {
+    margin-top: calc(var(--spacing) * 15);
+  }
   .headshot-image-right {
-    height: calc(var(--spacing) * 70);
-    float: left;
-    margin-top: calc(var(--spacing) * 2);
-    margin-bottom: calc(var(--spacing) * 2);
+    height: calc(var(--spacing) * 60);
+    float: right;
+    margin-top: 0;
+    margin-bottom: calc(var(--spacing) * 5);
+    margin-right: max(var(--max-headshot-offset), calc(((100% - 100vw) / 2) + 5px + (var(--spacing) * 5)));
+    left: calc(var(--spacing) * 5); 
     position: relative;
     object-fit: cover;
-    left: 20vw;
     object-position: left top;
-    max-width: calc(100% - 20vw + ((100vw - 100%) / 2) - 5px);
+    /*max-width: calc(100% - 40vw - ((100vw - 100%) / 2) - 5px); */
   }
   .headshot-image-left {
-    height: calc(var(--spacing) * 70);
-    float: right;
-    margin-top: calc(var(--spacing) * 2);
-    margin-bottom: calc(var(--spacing) * 2);
+    height: calc(var(--spacing) * 60);
+    float: left;
+    margin-top: 0;
+    margin-bottom: calc(var(--spacing) * 5);
+    margin-left: max(var(--max-headshot-offset), calc(((100% - 100vw) / 2) + 5px));
+    right: calc(var(--spacing) * 5);
     position: relative;
-    right: 20vw;
     object-fit: cover;
     object-position: right top;
-    max-width: calc(100% - 20vw + ((100vw - 100%) / 2) - 5px);
+  }
+  .tarnach-side_image {
+    float: left;
+    height: calc(var(--spacing) * 40);
+    margin-top: 0;
+    margin-right: calc(var(--spacing) * 5);
   }
   .center {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .tab__button {
+    color: rgb(var(--color-secondary-600));
+  }
+  .tab__button.tab--active {
+    border-bottom: 2px solid rgb(var(--color-secondary-600));
+  }
+  .tab__panel {
+    display: none;
+    color: rgb(var(--color-secondary-600));
+  }
+  .tab__panel.tab--active {
+    display: block;
+  }
+  .gold-border {
+    border: 3px solid rgba(var(--color-secondary-600), 1); 
+  }
+  .invalid-feedback,
+  .empty-feedback {
+    display: none;
+  }
+  .was-validated :placeholder-shown:invalid ~ .empty-feedback {
+    display: block;
+    color: #dc3545;
+  }
+  .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+    display: block;
+    color: #dc3545;
+  }
+  .is-invalid,
+  .was-validated :invalid {
+    border-color: #dc3545;
+  }
+  .tarnach-entry {
+    border-color: gb(var(--color-neutral-800));
+    border-style: var(--tw-border-style);
+    border-width: 3px;
+  }
+  .tarnach-entry:focus {
+    outline-style: none;
+    border-color: rgba(var(--color-secondary-600), 1);
+    --tw-ring-color: rgba(var(--color-secondary-600), 1);
+  }
+  .tarnach-entry::placeholder {
+    color: rgb(var(--color-neutral-800));
   }
 }
 
@@ -295,6 +388,23 @@ html {
   }
 }
 
+@keyframes button-bounce {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: calc(var(--spacing) * 5);
+  }
+}
+
+
+.down-arrow-button {
+  position: relative;
+  top: 0;
+  animation: button-bounce 1.5s infinite  alternate;
+}
+
+
 .reviews::after {
   display: block;
   content: "\"Make you want to dance again and again\"";
@@ -309,18 +419,37 @@ html {
 
 .tarnach-p::before {
   content: "";
-  width: 10em;
+  width: 14em;
   display: block;
   overflow: hidden;
   /* For Demonstration 
-  border: 1px solid green; */
+  border: 1px solid green; */ 
 }
 .tarnach-p::after {
   content: "";
-  width: 100%;
+  margin-bottom: calc(var(--spacing) * 5);
+  width: 14em;
   display: block;
   overflow: hidden;
   /* For Demonstration 
-  border: 1px solid green; */
+  border: 1px solid green; */ 
+}
+
+.tarnach-p-gold::before {
+  content: "";
+  width: 14em;
+  display: block;
+  overflow: hidden;
+  /* For Demonstration 
+  border: 1px solid green; */ 
+}
+.tarnach-p-gold::after {
+  content: "";
+  margin-bottom: calc(var(--spacing) * 5);
+  width: 14em;
+  display: block;
+  overflow: hidden;
+  /* For Demonstration 
+  border: 1px solid green; */ 
 }
 

@@ -1,0 +1,169 @@
+<!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+    632e5873-870d-43fb-9306-8f291079d755
+
+    =======================================================================
+ -->
+
+<div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">
+  <div class="container mx-auto">
+    <div class="max-w-xl mx-auto my-10 p-5 rounded-md shadow-2xl">
+      <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+          <input type="hidden" name="access_key" value="632e5873-870d-43fb-9306-8f291079d755" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+          <div class="flex space-x-4 mb-6">
+            <div class="w-full">
+              <label for="fname" class="block mb-2 tarnach-p-gold">Name</label>
+              <input type="text" name="name" id="first_name" placeholder="e.g. Jane Doe" required class="w-full px-3 py-2 tarnach-entry rounded-md focus:ring" />
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide your name.
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="flex space-x-4 mb-6">
+            <div class="w-full">
+              <label for="email" class="block mb-2 tarnach-p-gold">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="e.g. janedoe@example.com" required class="w-full px-3 py-2 tarnach-entry rounded-md focus:ring" />
+              <div class="empty-feedback text-red-400 text-sm mt-1">
+                Please provide your email address.
+              </div>
+              <div class="invalid-feedback text-red-400 text-sm mt-1">
+                Please provide a valid email address.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-4 mb-6">
+            <div class="w-full">
+              <label for="event" class="block mb-2 tarnach-p-gold">Event type</label>
+              <input type="text" name="event" id="event" placeholder="e.g. Wedding, Party" required class="w-full px-3 py-2 tarnach-entry rounded-md focus:ring" />
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide the type of your event.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-4 mb-6">
+            <div class="w-full">
+              <label for="venue" class="block mb-2 tarnach-p-gold">Venue</label>
+              <input type="text" name="venue" id="venue" placeholder="e.g. Boturich Castle" required class="w-full px-3 py-2 tarnach-entry rounded-md focus:ring" />
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide your venue.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-4 mb-6">
+            <div class="w-full">
+              <label for="date" class="block mb-2 tarnach-p-gold">Date</label>
+              <input type="date" name="date" id="date" required class="w-full px-3 py-2 tarnach-entry rounded-md focus:ring" />
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide the date of your event.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <label for="message" class="block mb-2 tarnach-p-gold">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Please provide as much detail as possible so that we can answer your enquiry effectively" class="w-full px-3 py-2 tarnach-entry rounded-md focus:ring" required></textarea>
+            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+              Please enter a message.
+            </div>
+          </div>
+          <div class="mb-6">
+            <button type="submit" class="w-full px-3 py-4 tarnach-p-gold text-xl gold-border rounded-md hover:bg-primary-600 focus:bg-indigo-600 focus:outline-none">
+              Send Message
+            </button>
+          </div>
+          <p class="text-base text-center tarnach-p-gold" id="result"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    (function () {
+    "use strict";
+    /*
+    * Form Validation
+    */
+
+    // Fetch all the forms we want to apply custom validation styles to
+    const forms = document.querySelectorAll(".needs-validation");
+    const result = document.getElementById("result");
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener(
+        "submit",
+        function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            form.querySelectorAll(":invalid")[0].focus();
+            } else {
+            /*
+            * Form Submission using fetch()
+            */
+
+            const formData = new FormData(form);
+            event.preventDefault();
+            event.stopPropagation();
+            const object = {};
+            formData.forEach((value, key) => {
+                object[key] = value;
+            });
+            const json = JSON.stringify(object);
+            result.innerHTML = "Please wait...";
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+                },
+                body: json
+            })
+                .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = "Your message has been successfully sent! A member of our team will be in touch with you shortly.";
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-green-500");
+                } else {
+                    console.log(response);
+                    result.innerHTML = "Unfortunately, your message could not be sent. Please try contacting us via social media or email instead.";
+                    result.classList.remove("text-gray-500");
+                    result.classList.add("text-red-500");
+                }
+                })
+                .catch((error) => {
+                console.log(error);
+                result.innerHTML = "Unfortunately, your message could not be sent. Please try contacting us via social media or email instead.";
+                })
+                .then(function () {
+                form.reset();
+                form.classList.remove("was-validated");
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 5000);
+                });
+            }
+            form.classList.add("was-validated");
+        },
+        false
+        );
+    });
+    })();
+
+</script>
