@@ -36,7 +36,7 @@
   <div class="flex items-center justify-between">
     {{/* Copyright */}}
     {{ if .Site.Params.footer.showCopyright | default true }}
-      <p class="text-sm text-black dark:text-neutral-400">
+      <p class="text-sm prose dark:text-neutral-400">
         {{- with replace .Site.Params.copyright "{ year }" now.Year }}
           {{ . | markdownify }}
         {{- else }}
@@ -47,9 +47,10 @@
       </p>
     {{ end }}
 
+
     {{/* Theme attribution */}}
     {{ if .Site.Params.footer.showThemeAttribution | default true }}
-      <p class="text-xs text-black dark:text-neutral-400">
+      <p class="text-sm prose dark:text-neutral-400">
         {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
           href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
         }}

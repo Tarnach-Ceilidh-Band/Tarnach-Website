@@ -13,10 +13,14 @@
 
 
   {{< gallery >}}
-    <img src="images/gallery/1.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/4.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/6.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/5.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/1.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
+    <img src="images/gallery/13.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
+    <img src="images/gallery/6.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
+    <img src="images/gallery/10.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
+    <img src="images/gallery/5.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
+    <img src="images/gallery/7.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
+    <img src="images/gallery/11.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
+    <img src="images/gallery/8.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
   {{< /gallery >}}
 
 {{< /textblock >}}
@@ -176,9 +180,16 @@
 
     {{< accordionItem title="What happens if I have to cancel my booking?" >}}
     In the unfortunate event that you need to cancel your event, please get in touch with us as soon as possible. Our cancelation policy is:
+
+    {{< textp >}}
     - Any time over 4 weeks - 20% deposit
+    {{< /textp >}}
+    {{< textp >}}
     - Less than 4 weeks before event - 50% of fee
+    {{< /textp >}}
+    {{< textp >}}
     - Less than 2 weeks before event - 100% of fee
+    {{< /textp >}}
     {{< /accordionItem >}}
 
     {{< accordionItem title="What happens in your disco set?" >}}

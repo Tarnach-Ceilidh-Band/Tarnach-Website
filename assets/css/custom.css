@@ -397,11 +397,19 @@ html {
   }
 }
 
+@keyframes button-bounce-transform {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(var(--spacing) * 5));
+  }
+}
+
 
 .down-arrow-button {
   position: relative;
-  top: 0;
-  animation: button-bounce 1.5s infinite  alternate;
+  animation: button-bounce-transform 1.5s infinite  alternate;
 }
 
 
