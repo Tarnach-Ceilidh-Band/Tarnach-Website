@@ -157,7 +157,7 @@ messageID = "entry.839337160"
   # domain = "llama.yoursite.com"
 
 [umamiAnalytics]
-  websiteid = "9611f405-7750-49dc-93aa-50c130436307"
+  #websiteid = "9611f405-7750-49dc-93aa-50c130436307"
   # domain = "llama.yoursite.com"
   # dataDomains = "yoursite.com,yoursite2.com"
   # scriptName = ""
