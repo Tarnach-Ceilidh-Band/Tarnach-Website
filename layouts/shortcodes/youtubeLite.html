@@ -2,6 +2,10 @@
 {{- $label := .Get "id" | default "Blowfish" -}}
 {{- $params := .Get "params" -}}
 
-<center>
+<div class="tarnach-video-container">
+<div class="tarnach-video">
+    <div class="w-video">
     <lite-youtube videoid="{{ $id }}" playlabel="{{ $label }}" params="{{ $params }}"></lite-youtube>
-</center>
+    </div>
+</div>
+</div>

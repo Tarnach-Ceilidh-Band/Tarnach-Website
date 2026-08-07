@@ -1,0 +1,10 @@
+<a
+    href="#enquire"
+    {{ $enquire := "Enquire" }}
+    class="flex items-center text-secondary-600 {{ if eq .Name $enquire }} px-2 py-1 hover-change-bg bg-secondary-600 rounded-md max-w-fit {{ else }} hover-change {{ end }}">
+    {{ if .Name }}
+    <span class="text-base font-medium break-normal {{ if eq .Name $enquire }} text-white {{ end }}">
+        {{ .Name | markdownify }}
+    </span>
+    {{ end }}
+</a>

@@ -33,7 +33,7 @@
       </nav>
     {{ end }}
   {{ end }}
-  <div class="flex items-center justify-between">
+  <div class="flex center">
     {{/* Copyright */}}
     {{ if .Site.Params.footer.showCopyright | default true }}
       <p class="text-sm prose dark:text-neutral-400">
@@ -80,6 +80,7 @@
         event.target.style.width=null;
       });
     </script>
+     <script src="lib/tw-elements/tw-elements.umd.min.js" type="text/javascript"></script> 
   {{ end }}
   {{/* Extend footer - eg. for extra scripts, etc. */}}
   {{ if templates.Exists "partials/extend-footer.html" }}

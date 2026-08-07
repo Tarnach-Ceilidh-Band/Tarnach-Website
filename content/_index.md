@@ -8,20 +8,10 @@
   {{< /textp>}}
 
   {{< textp >}}
-    We provide entertainment for all types of events across Scotland and the UK. If you're looking for cèilidh band that will get your party started, don't hesitate to get in touch!
+    We provide entertainment for all types of events across Scotland and the UK. If you're looking for cèilidh band that will get your party started, don't hesitate to {{< link href="#enquire" >}}get in touch!{{< /link >}}
   {{< /textp>}}
 
-
-  {{< gallery >}}
-    <img src="images/gallery/1.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
-    <img src="images/gallery/13.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
-    <img src="images/gallery/6.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
-    <img src="images/gallery/10.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
-    <img src="images/gallery/5.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
-    <img src="images/gallery/7.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
-    <img src="images/gallery/11.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
-    <img src="images/gallery/8.jpg" class="grid-w50 h-25 md:grid-w25 object-cover" />
-  {{< /gallery >}}
+  {{< directory_links >}}
 
 {{< /textblock >}}
 
@@ -31,81 +21,58 @@
   {{< /textp >}}
 
   {{< youtubeLite id="0PdLtAGpVUM" >}}
+
+  {{< gallery >}}
+    <img src="images/gallery/1.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/13.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/6.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/10.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/5.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/7.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/11.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/8.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+  {{< /gallery >}}
   
   {{< social_links >}}
-    Want to see more? We regularly post clips on our social media channels - check them out via the links below!
+    Want to see more? We regularly post clips and pictures on our social media channels - check them out via the links below!
   {{< /social_links >}}
 
 {{< /textblock >}}
 
-{{< textblock heading="Meet the Band" linkref="meet-the-band" background=false >}}
+{{< textblock heading="Testimonials" linkref="testimonials" background=false >}}
 
   {{< textp >}}
-    Our lineup consists of three musicians with a wealth of professional experience and a passion for traditional music. Find out a bit more about each of our members below!
-  {{< /textp>}}
+    We pride ourselves on providing a great service to all of our clients. This applies both to the entertainment we provide on the night and throughout the booking process. Read what our clients have to say about us!
+  {{< /textp >}}
 
-  {{< headshot imagepath="images/headshots/ross.jpg" right=true >}}
+  {{< textp >}}
+  {{< /textp >}}
 
-    {{< textp gold=true italic=true >}}
-      Ross Clark - Fiddle
-    {{< /textp >}}
+  {{< testimonial tagline="- Kathryn Bradnam, April 2026" >}}
+    Such a fantastic band that provided the perfect wedding entertainment and got everyone up dancing! 
+  {{< /testimonial >}}
 
-    {{< textp >}}
-      Ross is a dynamic fiddle player hailing from Inverness. Introduced to traditional music at an early age, he draws inspiration from his Highland roots as well as from the traditions of Ireland and Cape Breton.
-    {{< /textp >}}
+  {{< testimonial tagline="- Susan Harvey, August 2025" >}}
+    We would like to thank Tàrnach for being an excellent cèilidh band and playing great cèilidh music at our wedding reception. They rose to the challenge of talking our English guests through the dances and were great fun and managed to get everyone dancing without total carnage. The band were very interactive and fun and made the evening really special. It was a small wedding reception and the band judged very well when we needed a wee rest from cèilidh dancing and played a couple of quieter tracks. We would highly recommend the band both for their music and for the atmosphere they bring to the room.  
+  {{< /testimonial >}}
 
-    {{< textp >}}
-      Since 2018 he has been immersed in the vibrant music scene of Glasgow, where he plays regularly at cèilidh and sessions.
-    {{< /textp >}}
+  {{< testimonial tagline="- Hazel Smith, July 2025" >}}
+    We had so much fun with the guests at our wedding! Had nothing but compliments about the band since from all over the place.
+  {{< /testimonial >}}
 
+  {{< testimonial tagline="- Penni Crosthwaite, April 2025" >}}
+    Brilliant band. Played for our wedding cèilidh and all our guests enjoyed themselves and commented on the excellent choice of music and range of dances. Thanks!
+  {{< /testimonial >}}
 
-  {{< /headshot >}}
+  {{< testimonial tagline="- Laire Ruce, August 2024" >}}
+    Fantastic band we had them for our anniversary celebration. Talented musicians who make you want to dance again and again. Ashley was so easy to deal with and really listened to what we needed. Great for any party, wedding, celebration.
+  {{< /testimonial >}}
 
-  {{< headshot imagepath="images/headshots/ash.jpg" right=false >}}
-
-    {{< textp gold=true italic=true >}}
-      Ashley Edwards - Piano/Caller
-    {{< /textp >}}
-
-    {{< textp >}}
-      Originally from Edinburgh, Ashley grew up playing trombone and taking part in many brass band competitions. He taught himself piano from a young age and following that guitar.
-    {{< /textp >}}
-
-    {{< textp >}}
-      Ashley is a graduate of the University of Aberdeen where he studied as a first study trombonist. Ashley also has a particular passion for conducting and led the Aberdeen University Concert Band during his time at university. Ashley graduated with a Bachelor of Music with Education degree and now he teaches music. He continues to enjoy playing trombone as well as piano and guitar and has more recently begun learning the accordion. 
-    {{< /textp >}}
-
-
-  {{< /headshot >}}
-
-
-  {{< headshot imagepath="images/headshots/ian.jpg" right=true >}}
-
-
-    {{< textp gold=true italic=true >}}
-      Ian Christie - Percussion/Caller
-    {{< /textp >}}
-
-    {{< textp >}}
-      Ian graduated from the University of Aberdeen in June 2018, specialising in percussion performance. After graduating Ian completed a masters in percussion performance in Las Vegas, USA before returning to Scotland in 2020.
-    {{< /textp >}}
-
-    {{< textp >}}
-      Ian now works with Fife council, teaching percussion and drum kit to primary and secondary pupils, as well as teaching privately. Professionally, Ian is a session musician and has experience playing in a variety of different musical settings including: orchestras, brass bands, theatre pits and cèilidh bands. 
-    {{< /textp >}}
-
-  {{< /headshot >}}
-
-  {{< side_image imagepath="images/headshots/cairi.png" >}}
-
-    {{< textp gold=true, italic=true >}}
-      Cairi Edwards - Band Administrator
-    {{< /textp >}}
-
-  {{< /side_image >}}
-
+  {{< testimonial tagline="- Clair Skilbeck, June 2024" >}}
+    Really fantastic cèilidh band I would highly recommend this band they were very entertaining they got everyone up dancing really fantastic highly recommend.
+  {{< /testimonial >}}
+  
 {{< /textblock >}}
-
 
 
 {{< textblock heading="Services" linkref="services" background=true  >}}
@@ -116,6 +83,9 @@
 
   {{< textp gold=true >}}
   We are always happy to tailor your cèilidh to suit your specific event, however here are a few examples:
+  {{< /textp >}}
+
+  {{< textp >}}
   {{< /textp >}}
 
   {{< tabs gold=true >}}
@@ -147,7 +117,23 @@
 
 {{< /textblock >}}
 
-{{< textblock heading="FAQs" linkref="faqs" background=false  >}}
+
+{{< textblock heading="Meet the Band" linkref="meet-the-band" background=false >}}
+
+  {{< textp gold=false >}}
+    Our lineup consists of three musicians with a wealth of professional experience and a passion for traditional music. Find out a bit more about each of our members below!
+  {{< /textp >}}
+
+  {{< textp >}}
+  {{< /textp >}}
+
+  {{< band_carousel >}}
+
+{{< /textblock >}}
+
+
+
+{{< textblock heading="FAQs" linkref="faqs" background=true  >}}
 
   {{< accordion >}}
     {{< accordionItem title="Should I have a cèilidh?" >}}
@@ -182,7 +168,7 @@
     In the unfortunate event that you need to cancel your event, please get in touch with us as soon as possible. Our cancelation policy is:
 
     {{< textp >}}
-    - Any time over 4 weeks - 20% deposit
+    - Any time over 4 weeks - 20% of fee
     {{< /textp >}}
     {{< textp >}}
     - Less than 4 weeks before event - 50% of fee
@@ -199,14 +185,26 @@
 
 {{< /textblock >}}
 
-{{< textblock heading="Enquire" linkref="enquire" background=true  >}}
 
-  {{< textp gold=true >}}
-    If you would like to enquire about hiring Tàrnach for your event, or have any other questions, please do not hesitate to get in touch. You can contact us via email at {{< link href="mailto:TarnachCeilidhBand@gmail.com" >}}TarnachCeilidhBand@gmail.com{{< /link >}}, through our social media channels, or by filling out the contact form below. We look forward to hearing from you!
+{{< textblock heading="Enquire" linkref="enquire" background=false >}}
+
+  {{< cairi-headshot imagepath="images/headshots/cairi-circle.png" >}}
+
+  {{< textp gold=false >}}
+    If you would like to enquire about hiring Tàrnach for your event please do not hesitate to get in touch with our band administrator Cairi! She will be able to answer any questions you might have about Tàrnach or cèilidhs in general.
   {{< /textp >}}
+
+  {{< textp gold=false >}}
+    You can contact Cairi via email at {{< link href="mailto:TarnachCeilidhBand@gmail.com" >}}TarnachCeilidhBand@gmail.com{{< /link >}}, through our social media channels, or by filling out the contact form below. We look forward to hearing from you!
+  {{< /textp >}}
+
+  {{< /cairi-headshot >}}
   
   {{< social_links >}}
   {{< /social_links >}}
+
+  {{< textp >}}
+  {{< /textp >}}
 
   {{< contact_form >}}
 

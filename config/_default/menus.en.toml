@@ -21,8 +21,8 @@
   weight = 20
 
 [[main]]
-  name = "Meet the Band"
-  url = "#meet-the-band"
+  name = "Testimonials"
+  url = "#testimonials"
   weight = 30
 
 [[main]]
@@ -31,14 +31,19 @@
   weight = 40
 
 [[main]]
+  name = "Meet the Band"
+  url = "#meet-the-band"
+  weight = 50
+
+[[main]]
   name = "FAQs"
   url = "#faqs"
-  weight = 50
+  weight = 60
 
 [[main]]
   name = "Enquire"
   url = "#enquire"
-  weight = 60
+  weight = 70
 
 #[[main]]
 #  name = "example sub-menu 1"

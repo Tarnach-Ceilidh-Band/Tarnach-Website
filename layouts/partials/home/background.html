@@ -50,6 +50,7 @@
           {{ end }}
         </div>
         <!-- <div class="relative flex flex-col items-center justify-center px-1 py-1 text-center"> -->
+          <div class="h-gap-to-logo w-full"> </div>
           <div class="relative flex flex-col items-center justify-center px-1 py-1"> 
           {{ with .Site.Params.Author.image }}
             {{ $authorImage := "" }}
@@ -110,8 +111,10 @@
             {{ end }}
           </div>
         -->
+          <!--
           <h1 class="mt-4 mb-6 text-neutral-800 text-xl reviews font-review text-center min-h-reviews">
           </h1> 
+        
           <div class="h-gap-to-button w-full"> </div>
           <div class="mt-6 mb-6 text-4xl">
             {{ with .Site.Params.Author.links }}
@@ -126,6 +129,7 @@
               </div>
             {{ end }}
           </div>
+        -->
           <div class="h-gap-to-body w-full"> </div>
           <section class="w-full">{{ .Content }}</section>
         </div>

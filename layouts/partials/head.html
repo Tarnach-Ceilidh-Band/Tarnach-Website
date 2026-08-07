@@ -51,6 +51,14 @@
     {{ end }}
   {{ end }}
 
+  {{/* Make sure these elements are loaded and put in public directory */}}
+  {{ with resources.Get "lib/tw-elements/tw-elements.umd.min.js.map" }}
+    <link href="{{ .Permalink }}" >
+  {{ end }}
+  {{ with resources.Get "lib/tw-elements/tw-elements.umd.min.js" }}
+    <link href="{{ .Permalink }}" >
+  {{ end }}
+
   {{/* Social */}}
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
@@ -105,6 +113,11 @@
   {{ with resources.Get "css/custom.css" }}
     {{ $cssResources = $cssResources | append . }}
   {{ end }}
+  <!--
+  {{ with resources.Get "css/bootstrap.min.css" }}
+    {{ $cssResources = $cssResources | append . }}
+  {{ end }}
+  -->
   {{ if not .Site.Params.disableImageZoom | default true }}
     {{ $cssResources = $cssResources | append (resources.Get "lib/zoom/style.css") }}
   {{ end }}
@@ -156,6 +169,11 @@
   {{ end }}
   {{ $jsResources = $jsResources | append (resources.Get "js/katex-render.js") }}
   {{ $jsResources = $jsResources | append (resources.Get "js/print-support.js") }}
+  <!--
+  {{ $jsResources = $jsResources | append (resources.Get "js/jquery-3.7.1.min.js") }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/bootstrap.min.js") }}
+  -->
+  {{ $jsResources = $jsResources | append (resources.Get "lib/tw-elements/tw-elements.umd.min.js") }}
   {{ if $jsResources }}
     {{ $bundleJS := $jsResources | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint $alg }}
     <script

@@ -1,12 +1,15 @@
 :root {
-  --gradient-length: 0%; 
+  --gradient-length: 50%; 
   --blue-gradient-length: 130%; 
   --font-weight-light: 300;
   --font-weight-normal: 800;
   --tarnach-container: 80rem;
   --text-5xl: 3rem;
+  --text-6xl: 5rem;
   --text-5xl--line-height: calc(2.5 / 3);
   --max-headshot-offset: -10%;
+  --headshot-carousel-image-height: calc(var(--spacing) * 55);
+  --testimonial-carousel-heading-height: calc(var(--spacing) * 30);
 }
 
 @layer utilities {  
@@ -108,6 +111,12 @@
   .text-black {
     color: #000000;
   }
+  .text-gold {
+    color: rgba(var(--color-secondary-600), 1);
+  }
+  .bg-primary {
+    background-color: rgba(var(--color-primary-500), 1);
+  }
   .bg-reviews {
     background-color: #ffffff;
   }
@@ -119,6 +128,9 @@
   }
   .w-logo {
     width: min(calc(var(--spacing) * 100), 80vw);
+  }
+  .w-video {
+    width: min(calc(var(--spacing) * 150), 80vw);
   }
   .py-review { 
     padding-top: 15rem; 
@@ -140,14 +152,20 @@
   .bg-white {
     background-color: #ffffff;
   }
+  .bg-grey {
+    background-color:rgb(125, 125, 125)
+  }
   .h-gap-to-button {
-    height: calc(var(--spacing) * 40);
+    height: calc(var(--spacing) * 60);
+  }
+  .h-gap-to-logo {
+    height: calc(var(--spacing) * 10);
   }
   .down-arrow-button {
     position: relative;
   }
   .h-gap-to-body {
-    height: calc(var(--spacing) * 50);
+    height: calc(var(--spacing) * 90);
   }
   .h-45 {
     height: calc(var(--spacing) * 45);
@@ -157,6 +175,12 @@
   }
   .h-25 {
     height: calc(var(--spacing) * 25);
+  }
+  .h-18 {
+    height: calc(var(--spacing) * 18);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
   }
   .prose {
     --tw-prose-body: rgb(125, 125, 125);
@@ -191,15 +215,20 @@
   }
   .tarnach-p-gold {
     margin-top: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--spacing) * 2);
     color: rgba(var(--color-secondary-600), 1);
   }
   .tarnach-textblock {
     position: relative;
     width: 100%;
-    margin-bottom: calc(var(--spacing) * 20);
-    margin-top: calc(var(--spacing) * 20);
-    padding-top: calc(var(--spacing) * 10);
-    padding-bottom: calc(var(--spacing) * 10);
+    margin-bottom: calc(var(--spacing) * 0);
+    margin-top: calc(var(--spacing) * 0);
+    padding-top: calc(var(--spacing) * 20);
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .tarnach-paragraph {
+    margin: calc(var(--spacing) * 2);
+    padding: calc(var(--spacing) * 2);
   }
   .tarnach-textblock-background {
     position: absolute;
@@ -215,6 +244,9 @@
     position: relative;
     left: calc(-50vw + 50% + 5px);
   }
+  .directory-img {
+    margin: calc(var(--spacing) * 2);
+  }
   .tarnach-headshot-section {
     margin-top: calc(var(--spacing) * 15);
   }
@@ -229,6 +261,87 @@
     object-fit: cover;
     object-position: left top;
     /*max-width: calc(100% - 40vw - ((100vw - 100%) / 2) - 5px); */
+  }
+  .testimonial-box {
+    margin-bottom: calc(var(--spacing) * 10);
+    padding: calc(var(--spacing) * 4);
+  }
+  .cairi-image {
+    height: calc(var(--spacing) * 45);
+    float: right;
+    margin-top: 0;
+    margin-bottom: calc(var(--spacing) * 5);
+    margin-left: calc(var(--spacing) * 5);
+    position: relative;
+    /*max-width: calc(100% - 40vw - ((100vw - 100%) / 2) - 5px); */
+  }
+  .headshot-carousel {
+    height: var(--headshot-carousel-image-height);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: calc(var(--spacing) * 5);
+    padding: 0;
+    float: left;
+    position: relative;
+    object-fit: cover;
+    object-position: middle top;
+  }
+  .headshot-carousel-container {
+    max-width: calc(var(--headshot-carousel-image-height)*208/68);
+    height: auto;
+  }
+  .headshot-carousel-control {
+    height: var(--headshot-carousel-image-height)
+  }
+  .headshot-carousel-spacing {
+    visibility: hidden;
+  }
+  .testimonial-heading {
+    height: var(--testimonial-carousel-heading-height);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    float: inline;
+    background-color: rgba(var(--color-primary-500), 1);
+  }
+  .testimonial-carousel-control {
+    height: var(--testimonial-carousel-heading-height);
+  }
+  .speech-left {
+    margin-top: -2rem;
+    margin-bottom: -5rem;
+    color: rgba(var(--color-secondary-600), 1);
+    font-weight: var(--font-weight-light);
+    font-style: italic;
+    font-size: var(--text-6xl);
+    text-align: left;
+  }
+  .speech-right {
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+    color: rgba(var(--color-secondary-600), 1);
+    font-weight: var(--font-weight-light);
+    font-style: italic;
+    font-size: var(--text-6xl);
+    text-align: right;
+  }
+  .speech-icon-left {
+    color: rgba(var(--color-secondary-600), 1);
+    display: flex;
+    justify-content: left;
+  }
+  .speech-icon-right {
+    color: rgba(var(--color-secondary-600), 1);
+    display: flex;
+    justify-content: right;
+  }
+  .testimonial-paragraph {
+    text-align: center;
+    margin-top: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .headshot-image-left {
     height: calc(var(--spacing) * 60);
@@ -251,6 +364,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .ross-justify-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .tab__button {
     color: rgb(var(--color-secondary-600));
@@ -297,6 +415,26 @@
   .tarnach-entry::placeholder {
     color: rgb(var(--color-neutral-800));
   }
+  .center {
+  justify-content: center;
+  align-items: center;
+  }
+  .top {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  }
+  .tarnach-video {
+    display: flex;
+    justify-content: center;
+  }
+  .nogap {
+  margin: 0;
+  padding: 0;
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
 }
 
 @font-face {
@@ -305,7 +443,7 @@
 }
 
 /* THE URLS HERE ARE A HACK BECAUSE THE THEME DOES NOT PROPERLY DEAL WITH SUBFOLDERS
-AS BASEURLS. /Tarnach-Website/ should be removed when properly deploying.*/
+AS BASEURLS. The /Tarnach-Website/ prefix should be removed when properly deploying.*/
 @font-face {
     font-family: 'Crimson Pro';
     src: url('/fonts/CrimsonPro-Regular.eot');
@@ -436,6 +574,16 @@ html {
 .tarnach-p::after {
   content: "";
   margin-bottom: calc(var(--spacing) * 5);
+  width: 14em;
+  display: block;
+  overflow: hidden;
+  /* For Demonstration 
+  border: 1px solid green; */ 
+}
+
+.tarnach-video-container::after {
+  content: "";
+  margin-bottom: calc(var(--spacing) * 10);
   width: 14em;
   display: block;
   overflow: hidden;

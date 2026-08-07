@@ -5,7 +5,7 @@
 
 <div
   id="{{ $id }}"
-  class="{{ if $isSeparated }}space-y-2{{ else }}border border-neutral-200 dark:border-neutral-700 rounded-lg overflow-hidden{{ end }}"
+  class="{{ if $isSeparated }}space-y-2{{ else }} dark:border-neutral-700 rounded-lg overflow-hidden{{ end }}"
   data-accordion="{{ $mode }}"
   data-accordion-separated="{{ $isSeparated }}"
 >
@@ -20,7 +20,7 @@
 {{ else }}
 <style>
   #{{ $id }} > details + details {
-    border-top: 1px solid rgb(var(--color-primary-500));
+    border-top: 1px solid rgba(var(--color-secondary-600), 1);;
   }
   .dark #{{ $id }} > details + details {
     border-top-color: rgb(var(--color-primary-500));

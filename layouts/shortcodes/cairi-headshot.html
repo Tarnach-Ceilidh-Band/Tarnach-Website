@@ -1,0 +1,8 @@
+{{ $heading := .Get "heading" }}
+{{ $imagepath := .Get "imagepath" }}
+
+<section class="cairi-headshot-section">
+    <img src="{{- $imagepath -}}" class="cairi-image nozoom" />
+    {{- .Inner  -}}
+    <div class="w-full" style="display:block; overflow:hidden; margin:0"></div>
+</section>

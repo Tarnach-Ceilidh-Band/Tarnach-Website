@@ -1,0 +1,63 @@
+  {{< textp >}}
+    Our lineup consists of three musicians with a wealth of professional experience and a passion for traditional music. Find out a bit more about each of our members below!
+  {{< /textp>}}
+
+  {{< headshot imagepath="images/headshots/ross.jpg" right=true >}}
+
+    {{< textp gold=true italic=true >}}
+      Ross Clark - Fiddle
+    {{< /textp >}}
+
+    {{< textp >}}
+      Ross is a dynamic fiddle player hailing from Inverness. Introduced to traditional music at an early age, he draws inspiration from his Highland roots as well as from the traditions of Ireland and Cape Breton.
+    {{< /textp >}}
+
+    {{< textp >}}
+      Since 2018 he has been immersed in the vibrant music scene of Glasgow, where he plays regularly at cèilidh and sessions.
+    {{< /textp >}}
+
+
+  {{< /headshot >}}
+
+  {{< headshot imagepath="images/headshots/ash.jpg" right=false >}}
+
+    {{< textp gold=true italic=true >}}
+      Ashley Edwards - Piano/Caller
+    {{< /textp >}}
+
+    {{< textp >}}
+      Originally from Edinburgh, Ashley grew up playing trombone and taking part in many brass band competitions. He taught himself piano from a young age and following that guitar.
+    {{< /textp >}}
+
+    {{< textp >}}
+      Ashley is a graduate of the University of Aberdeen where he studied as a first study trombonist. Ashley also has a particular passion for conducting and led the Aberdeen University Concert Band during his time at university. Ashley graduated with a Bachelor of Music with Education degree and now he teaches music. He continues to enjoy playing trombone as well as piano and guitar and has more recently begun learning the accordion. 
+    {{< /textp >}}
+
+
+  {{< /headshot >}}
+
+
+  {{< headshot imagepath="images/headshots/ian.jpg" right=true >}}
+
+
+    {{< textp gold=true italic=true >}}
+      Ian Christie - Percussion/Caller
+    {{< /textp >}}
+
+    {{< textp >}}
+      Ian graduated from the University of Aberdeen in June 2018, specialising in percussion performance. After graduating Ian completed a masters in percussion performance in Las Vegas, USA before returning to Scotland in 2020.
+    {{< /textp >}}
+
+    {{< textp >}}
+      Ian now works with Fife council, teaching percussion and drum kit to primary and secondary pupils, as well as teaching privately. Professionally, Ian is a session musician and has experience playing in a variety of different musical settings including: orchestras, brass bands, theatre pits and cèilidh bands. 
+    {{< /textp >}}
+
+  {{< /headshot >}}
+
+  {{< side_image imagepath="images/headshots/cairi.png" >}}
+
+    {{< textp gold=true, italic=true >}}
+      Cairi Edwards - Band Administrator
+    {{< /textp >}}
+
+  {{< /side_image >}}

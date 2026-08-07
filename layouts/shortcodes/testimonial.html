@@ -1,0 +1,16 @@
+{{ $tagline := .Get "tagline" }}
+
+<div class="shadow-2xl rounded-md testimonial-box flex flex-col">
+    <span class="speech-icon-left">
+        {{ partial "icon.html" "quotations" }}
+    </span>
+    <p class="testimonial-paragraph">
+        {{- .Inner  -}}
+    </p>
+    <span class="speech-icon-right">
+        {{ partial "icon.html" "quotations-u" }}
+    </span>
+    <p class="text-gold italic mb-0 mt-0">
+        {{ $tagline }}
+    </p>
+</div>
