@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Tàrnach Cèilidh Band"
+title = "Tàrnach | Contemporary Cèilidh Band Available for Weddings and Parties Throughout Scotland and the UK"
 
 [params]
   displayName = "EN"
@@ -11,7 +11,7 @@ title = "Tàrnach Cèilidh Band"
   dateFormat = "2 January 2006"
   logo = "images/logo_n_padding.png"
   # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  description = "Our three-piece lineup of fiddle, piano, and drumkit provides the perfect music for cèilidh dancing by blending traditional melodies with a modern, energetic sound."
   copyright = "Tàrnach Cèilidh Band © { year }"
 
 [params.author]

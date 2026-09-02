@@ -4,11 +4,23 @@
 {{< textblock heading="About" linkref="about" background=false  >}}
 
   {{< textp >}}
-    Tàrnach are a Scottish cèilidh band who blend traditional melodies with a modern, energetic sound. We provide a three-piece lineup of experienced professional musicians, and full cèilidh calling so that everyone can enjoy the dances. Whether you are celebrating a wedding or hosting a party, a night of cèilidh dancing courtesy of Tàrnach is the perfect way to bring people together!
-  {{< /textp>}}
+    We are Tàrnach, a contemporary Scottish cèilidh band who provide entertainment for weddings, parties, and other events throughout Scotland and the UK!
+  {{< /textp >}}
 
   {{< textp >}}
-    We provide entertainment for all types of events across Scotland and the UK. If you're looking for cèilidh band that will get your party started, don't hesitate to {{< link href="#enquire" >}}get in touch!{{< /link >}}
+    Our three-piece lineup of fiddle, piano, and drumkit provides the perfect music for cèilidh dancing by blending traditional melodies with a modern, energetic sound. Our members are professional musicians who have experience performing in a wide variety of venues and settings, so you can count on us to bring your event to life!
+  {{< /textp >}}
+
+  {{< textp >}}
+    In addition to supplying live cèilidh music, the band also provide full dance calling. This means that everyone in attendance is able to participate in the cèilidh dancing, regardless of experience.
+  {{< /textp >}}
+
+  {{< textp >}}
+    We believe that a night of entertainment courtesy of Tàrnach is the perfect way to bring people together. But don't just take our word for it - {{< link href="#testimonials" >}}you can read testimonials from those who have booked Tàrnach here.{{< /link >}}
+  {{< /textp >}}
+
+  {{< textp >}}
+    Interested in hiring us for your event? If you're looking for cèilidh band that will get your party started, don't hesitate to {{< link href="#enquire" >}}get in touch!{{< /link >}}
   {{< /textp>}}
 
   {{< directory_links >}}
@@ -23,14 +35,14 @@
   {{< youtubeLite id="0PdLtAGpVUM" >}}
 
   {{< gallery >}}
-    <img src="images/gallery/1.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/13.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/6.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/10.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/5.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/7.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/11.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
-    <img src="images/gallery/8.jpg" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/1.jpg" alt="Cèilidh band at Loch Lomond" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/13.jpg" alt="Performing traditional Scottish music at a wedding" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/6.jpg" alt="Band rehearsing" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/10.jpg" alt="Band setup including instruments, PA system, and disco lighting" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/5.jpg" alt="At Boturich Castle, a luxury wedding venue" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/7.jpg" alt="Performing for a charity event in Scotland" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/11.jpg" alt="Dancers cèilidh dancing to energetic traditional music" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/8.jpg" alt="Three-piece event band playing music outside" class="grid-w50 h-45 md:grid-w25 object-cover" />
   {{< /gallery >}}
   
   {{< social_links >}}
@@ -52,8 +64,12 @@
     Such a fantastic band that provided the perfect wedding entertainment and got everyone up dancing! 
   {{< /testimonial >}}
 
+  {{< testimonial tagline="- Bekah Otoo, September 2025" >}}
+    These guys did an absolutely incredible job at our wedding! I would highly highly recommend!!
+  {{< /testimonial >}}
+
   {{< testimonial tagline="- Susan Harvey, August 2025" >}}
-    We would like to thank Tàrnach for being an excellent cèilidh band and playing great cèilidh music at our wedding reception. They rose to the challenge of talking our English guests through the dances and were great fun and managed to get everyone dancing without total carnage. The band were very interactive and fun and made the evening really special. It was a small wedding reception and the band judged very well when we needed a wee rest from cèilidh dancing and played a couple of quieter tracks. We would highly recommend the band both for their music and for the atmosphere they bring to the room.  
+    We would like to thank Tàrnach for being an excellent cèilidh band and playing great cèilidh music at our wedding reception. They rose to the challenge of talking our English guests through the dances and were great fun and managed to get everyone dancing without total carnage. The band were very interactive and fun and made the evening really special. It was a small wedding reception and the band judged very well when we needed a wee rest from cèilidh dancing and played a couple of quieter tracks. We would highly recommend the band both for their music and for the atmosphere they bring to the room.
   {{< /testimonial >}}
 
   {{< testimonial tagline="- Hazel Smith, July 2025" >}}
@@ -67,10 +83,6 @@
   {{< testimonial tagline="- Laire Ruce, August 2024" >}}
     Fantastic band we had them for our anniversary celebration. Talented musicians who make you want to dance again and again. Ashley was so easy to deal with and really listened to what we needed. Great for any party, wedding, celebration.
   {{< /testimonial >}}
-
-  {{< testimonial tagline="- Clair Skilbeck, June 2024" >}}
-    Really fantastic cèilidh band I would highly recommend this band they were very entertaining they got everyone up dancing really fantastic highly recommend.
-  {{< /testimonial >}}
   
 {{< /textblock >}}
 
@@ -78,7 +90,11 @@
 {{< textblock heading="Services" linkref="services" background=true  >}}
 
   {{< textp gold=true >}}
-  Our cèilidh package is perfect for all kinds of events: weddings, parties, charity evenings, corporate events or student nights. A typical cèilidh package includes a four hour hire of our three-piece band (including a break), dance calling, and a disco set. We have a wide repertoire of cèilidh dances, including old favourites like the Dashing White Sergeant, and less well-known options like the Pat-a-Cake Polka. To ensure that everyone has a chance to get up and dance, we perform a mixture of fast, slow, couples, and group dances. 
+    Our cèilidh package is perfect for all kinds of events: weddings, parties, charity evenings, corporate events or student nights. A typical cèilidh package includes an evening hire of our three-piece band, who will provide cèilidh music, dance calling, and a disco set. We also supply our own PA system. 
+  {{< /textp >}}
+
+  {{< textp gold=true >}}
+    We have a wide repertoire of cèilidh dances, including old favourites (like the Dashing White Sergeant, the Canadian Barndance, the Strip the Willow), and less well-known options (like the Pat-a-Cake Polka, the Britannia Two-Step, the Riverside Jig). To ensure that everyone has a chance to get up and dance, we perform a mixture of fast, slow, couples, and group dances. 
   {{< /textp >}}
 
   {{< textp gold=true >}}
@@ -92,24 +108,22 @@
 
       {{< tab label="Wedding" >}}
       Example programme:
-      - 6:30 - 8pm: Band arrives, set up and soundchecks
-      - 8 - 9.30pm: First dance then into cèilidh set
-      - 9.30 - 10.15pm: Break for evening buffet
-      - 10.15 - 11pm: More cèilidh dances
+      - 6.30pm - 8pm: Band arrives, set up and soundchecks
+      - 8pm - 9.30pm: First dance then into cèilidh set
+      - 9.30pm - 10.15pm: Break for evening buffet
+      - 10.15pm - 11pm: More cèilidh dances
       - 11pm - midnight: Disco
       - Last dance: Auld Lang Syne/Loch Lomond
       {{< /tab >}}
 
       {{< tab label="Party" >}}
       Example programme:
-      - 6:00 - 7:30pm: Band arrives, set up and soundchecks
-      - 7:30 - 8:15pm: First cèilidh set
-      - 8:15 - 9pm: Disco and buffet break
-      - 9.00pm: Sing happy birthday and cake cutting/speeches
-      - 9:00 - 9:45pm: More cèilidh dances
-      - 9:45 - 10:15pm: Disco
-      - 10:15 - 11pm: More cèilidh dances
-      - 11pm - midnight: Disco
+      - 6.00pm - 7.30pm: Band arrives, set up and soundchecks
+      - 7.30pm - 8.30pm: First cèilidh set
+      - 8.30pm - 9.15pm: Disco and buffet break
+      - 9.15pm: Sing happy birthday and cake cutting/speeches
+      - 9.30pm - 10.15pm: Second cèilidh set
+      - 10.15pm - 11pm: Disco
       - Last dance: Auld Lang Syne/Loch Lomond
       {{< /tab >}}
 
@@ -145,15 +159,15 @@
     {{< /accordionItem >}}
 
     {{< accordionItem title="How long do you play for?" >}}
-    We usually provided a 4 hour set, which includes a mixture of cèilidh and disco. However every event is unique and we can tailor this to suit your needs. 
+    We usually provided a 5 hour set, which includes a mixture of cèilidh dancing, disco, and breaks. However every event is unique and we can tailor this to suit your needs. 
     {{< /accordionItem >}}
 
     {{< accordionItem title="What time will you arrive, and how long does set up take?" >}}
-    We will arrive approximately 90 mins before we are scheduled to play, to set up and soundcheck. 
+    We will arrive approximately 90 mins before we are scheduled to play. In general, we require access to the venue 1 hour 15 minutes before we start playing in order to set up and soundcheck. After we play, we also require about 1 hour in order to pack up all of our equipment.
     {{< /accordionItem >}}
 
     {{< accordionItem title="What can you do for my first dance?" >}}
-    For your first dance, we offer a range of options to make it truly special! You could choose to have us play any of our ceilidh dances, many couples choose a classic Waltz, or we even had one couple start with a Strip the Willow! Alternatively, we can perform a Scottish song live for you – our personal favourite was an arrangement of Wild Mountain Thyme which we played with two violins! Or if you would prefer not to have something played live you can choose any song that we can play through our PA speaker system.  
+    We find that most couples have picked out a special song that they wish to be played through our PA speaker system for their first dance. However, we can also provide live traditional music if you prefer - our repertoire includes a number of beautiful Scottish waltzes which are ideal for first dances. If you are interested in this option, simply discuss it with us during the booking process!
     {{< /accordionItem >}}
 
     {{< accordionItem title="What happens if a band member is unwell and unable to attend my event?" >}}
