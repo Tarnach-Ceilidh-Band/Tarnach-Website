@@ -1,0 +1,10 @@
+  {{< gallery >}}
+    <img src="images/gallery/1.jpg" alt="Cèilidh band at Loch Lomond" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/13.jpg" alt="Performing traditional Scottish music at a wedding" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/6.jpg" alt="Band rehearsing" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/10.jpg" alt="Band setup including instruments, PA system, and disco lighting" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/5.jpg" alt="At Boturich Castle, a luxury wedding venue" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/7.jpg" alt="Performing for a charity event in Scotland" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/11.jpg" alt="Dancers cèilidh dancing to energetic traditional music" class="grid-w50 h-45 md:grid-w25 object-cover" />
+    <img src="images/gallery/8.jpg" alt="Three-piece event band playing music outside" class="grid-w50 h-45 md:grid-w25 object-cover" />
+  {{< /gallery >}}
